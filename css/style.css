@@ -12,6 +12,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 
 
-/* modulo ejemplo */
-.modulo_ejemplo{}
-/* FIN modulo ejemplo */
+/* tpl-ventajas-key */
+.tpl-ventajas-key{}
+.tpl-ventajas-key .sta-venyajas-key_max{}
+
+/* FIN tpl-ventajas-key */
