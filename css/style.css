@@ -13,9 +13,29 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 
 /* tpl-ventajas-key */
-.tpl-ventajas-key{}
-.tpl-ventajas-key .sta-venyajas-key_max{max-width: 1220px;}
-.tpl-ventajas-key .sta-venyajas-key_title{font: italic 36px 'Libre Baskerville', serif}
-.tpl-ventajas-key .sta-venyajas-key_subtitle{}
+
+
+.tpl-ventajas-key{background: #fff}
+.tpl-ventajas-key .sta-ventajas-key_max{text-align: center;margin: 0 auto}
+.tpl-ventajas-key .sta-ventajas-key_superior{color: #666; padding: 30px; max-width: 700px;margin: 0 auto;}
+.tpl-ventajas-key .sta-ventajas-key_title{font: italic 24px 'Libre Baskerville', serif;margin-bottom: 20px}
+.tpl-ventajas-key .sta-ventajas-key_subtitle{font: 300 14px 'Roboto', sans-serif}
+.tpl-ventajas-key .sta-ventajas-key_inferior{}
+.tpl-ventajas-key .sta-ventajas-key_boxes{}
+.tpl-ventajas-key .sta-ventajas-key_box{width: 290px; height: 380px; display: inline-block;position: relative;margin: 0 7.5px 20px}
+.tpl-ventajas-key .sta-ventajas-key_imgBox{position: absolute; bottom: 100%;left: 0;background-size: cover;background-position: center; background-repeat: no-repeat}
+.tpl-ventajas-key .sta-ventajas-key_titleBox{padding:20px;font: italic 400 20px/25px 'Libre Baskerville', serif;background: rgba(0,97,63,70%); text-align: center;color: #fff;position:absolute; bottom: 0;left: 0;right: 0}
+
+@media (min-width:801px){
+.tpl-ventajas-key .sta-ventajas-key_max{max-width: 1220px}
+.tpl-ventajas-key .sta-ventajas-key_superior{ padding: 55px 30px 10px}
+.tpl-ventajas-key .sta-ventajas-key_title{font-size:36px}
+.tpl-ventajas-key .sta-ventajas-key_subtitle{font-size:16px}
+.tpl-ventajas-key .sta-ventajas-key_inferior{}
+.tpl-ventajas-key .sta-ventajas-key_boxes{}
+.tpl-ventajas-key .sta-ventajas-key_box{margin: 0 6px 50px}
+.tpl-ventajas-key .sta-ventajas-key_titleBox{font-size: 30px; line-height: 36px}
+}
+
 
 /* FIN tpl-ventajas-key */
