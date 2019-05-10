@@ -12,11 +12,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 
 
-/* modulo ejemplo */
-.modulo_ejemplo{}
-/* FIN modulo ejemplo */
-
-
 /* tpl-boxes3-key */
 .tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
 .tpl-boxes3-key .sta-boxes3-key_box{margin: 20px auto;}
