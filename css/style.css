@@ -182,5 +182,15 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 @media (min-width: 601px){
   .tpl-boxesnum-key .sta-boxesnum-key_title{margin-bottom: 80px;}
   .tpl-boxesnum-key .sta-boxesnum-key_box{display: inline-block; vertical-align: top; margin: 0 20px;}
+  .tpl-boxesnum-key .sta-boxesnum-key_box:not(:last-of-type) .sta-boxesnum-key_text{margin-bottom: 0;}
+
 }
 /* fin tpl-boxesnum-key */
+
+/* tpl-map-key */
+.tpl-map-key{text-align: center;font:italic 36px 'Libre Baskerville', serif; color: #00613f; position: relative;}
+.tpl-map-key .sta-map-key_cont{max-width: 1300px; margin: 0 auto;}
+.tpl-map-key .sta-map-key_title{position: absolute; right: 0; left: 0; top: 10%;}
+.tpl-map-key .sta-map-key_image{min-width: 300px;}
+.tpl-map-key .sta-map-key_image img{width: 100%; overflow: auto}
+/* fin tpl-map-key */
