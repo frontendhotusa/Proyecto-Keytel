@@ -169,3 +169,18 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 }
 
 /* fin tpl-fiveboxes-key */
+
+
+/* tpl-boxesnum-key */
+.tpl-boxesnum-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #dadada; padding: 50px 20px;counter-reset: section;}
+.tpl-boxesnum-key .sta-boxesnum-key_title{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 50px;}
+.tpl-boxesnum-key .sta-boxesnum-key_box{max-width: 400px; margin: 0 auto; position: relative;}
+.tpl-boxesnum-key .sta-boxesnum-key_titbox{font:italic 24px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 5px;}
+.tpl-boxesnum-key .sta-boxesnum-key_box:not(:last-of-type) .sta-boxesnum-key_text{margin-bottom: 60px;}
+.tpl-boxesnum-key .sta-boxesnum-key_titbox:after{content: " " counter(section);counter-increment: section; background: #e6c300; border-radius: 50%; box-shadow: 0px 0px 4px 0px #000; color: #00613f; position: absolute; top: -35px; right: 0; left: 0; width: 25px; height: 25px; margin: 0 auto; font: 14px 'Roboto';}
+
+@media (min-width: 601px){
+  .tpl-boxesnum-key .sta-boxesnum-key_title{margin-bottom: 80px;}
+  .tpl-boxesnum-key .sta-boxesnum-key_box{display: inline-block; vertical-align: top; margin: 0 20px;}
+}
+/* fin tpl-boxesnum-key */
