@@ -13,6 +13,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* FIN COOKIES */
 
 
+<<<<<<< HEAD
 /* .tpl-header-key */
 .tpl-header-key{position:relative;z-index:9999;text-align:right}
 .tpl-header-key.sta-fixed .sta-header-key_abs{position:fixed;background:#353165}
@@ -73,12 +74,18 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-header-key.sta-complete .sta-header-key_list .sta-header-key_idiomas ul li{display:block;font-weight:300}
 .tpl-header-key.sta-complete .sta-header-key_abs .sta-header-key_list .sta-header-key_idiomas ul{left:10px;text-align:center;background:#8fccdb}
 /* FIN .tpl-header-key */
+=======
+>>>>>>> Xoan
 
 /* tpl-boxes3-key */
 .tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
 .tpl-boxes3-key .sta-boxes3-key_title{color: #00613f; font-style: italic; margin-bottom: 10px;}
 .tpl-boxes3-key .sta-boxes3-key_text{font-family: 'Roboto'; font-size: 14px; text-transform: uppercase; letter-spacing: .05em;}
 .tpl-boxes3-key .sta-boxes3-key_box:not(:last-of-type){ margin-bottom: 35px;}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Xoan
 @media (min-width: 601px){
   .tpl-boxes3-key .sta-boxes3-key_max{ display: table; width:100%;}
   .tpl-boxes3-key .sta-boxes3-key_box{max-width: 200px;width: 33%;display: table-cell; vertical-align: top; padding: 0 20px;}
@@ -115,4 +122,52 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-ventajas-key .sta-ventajas-key_box{margin: 0 6px 50px}
 .tpl-ventajas-key .sta-ventajas-key_titleBox{font-size: 30px; line-height: 36px}
 }
+<<<<<<< HEAD
 /* FIN tpl-ventajas-key */
+=======
+/* fin tpl-boxes3-key */
+
+/* tpl-dualbox-key */
+.tpl-dualbox-key{text-align: center; font:italic 16px 'Libre Baskerville', serif; padding: 20px 20px 80px; background: #fff; color: #fff;}
+.tpl-dualbox-key .sta-dualbox-key_box{padding: 15px;background: #00613f;}
+.tpl-dualbox-key .sta-dualbox-key_box:not(:last-of-type){border-bottom: 1px solid #fff; border-bottom-color: rgba(255, 255, 255, .3);}
+.tpl-dualbox-key .sta-dualbox-key_max{background: #00613f; padding: 5px 0;}
+.tpl-dualbox-key .sta-dualbox-key_text{margin-top: 10px;}
+.tpl-dualbox-key .sta-dualbox-key_svg svg{fill: #e6c300; width: 55px; height: 55px; display: block; margin: 0 auto;}
+@media (min-width: 701px){
+.tpl-dualbox-key{font-size: 18px}
+.tpl-dualbox-key .sta-dualbox-key_box{display: table-cell; padding: 20px 10px; vertical-align: middle; width: 33%;}
+.tpl-dualbox-key .sta-dualbox-key_box:not(:last-of-type){border-right: 1px solid #fff;border-right-color: rgba(255, 255, 255, .3); border-bottom: 0;}
+.tpl-dualbox-key .sta-dualbox-key_max{display: table; width:100%; padding: 0; background: none;}
+.tpl-dualbox-key .sta-dualbox-key_text{display: table-cell; vertical-align: middle; margin-top: 0;}
+.tpl-dualbox-key .sta-dualbox-key_svg{display: table-cell; padding-right: 10px;}
+}
+@media (min-width: 901px){
+  .tpl-dualbox-key .sta-dualbox-key_svg{width: 65px;}
+  .tpl-dualbox-key .sta-dualbox-key_box{padding:20px 30px; }
+  .tpl-dualbox-key{font-size: 20px}
+  .tpl-dualbox-key .sta-dualbox-key_max{max-width:1200px; margin: 0 auto;}
+  .tpl-dualbox-key .sta-dualbox-key_text{text-align: left; margin-left: 10px;}
+
+}
+/* fin tpl-dualbox-key */
+
+/* tpl-footer-key */
+.tpl-footer-key{padding:10px; background: #969696; text-align: center; color: #fff;font:300 14px 'Roboto'; letter-spacing: .025em}
+.tpl-footer-key ul{margin-top: 15px;}
+.tpl-footer-key ul li button{font-weight: 300;}
+.tpl-footer-key .sta-footer-key_images img,
+.tpl-footer-key .sta-footer-key_images svg{margin: 10px 20px; max-width: 270px; max-height: 70px; fill: #fff;}
+@media (min-width: 601px), print{
+  .tpl-footer-key .sta-footer-key_images img,
+  .tpl-footer-key .sta-footer-key_images svg{ max-width: 40%; max-height: 52px;display: inline-block; vertical-align: middle;}
+  .tpl-footer-key .sta-footer-key_max{display: table; margin: 0 auto; width: 100%; max-width: 1200px;}
+  .tpl-footer-key .sta-footer-key_images{display: table-cell;width: 50%; text-align: left; padding-right: 10px;}
+  .tpl-footer-key .sta-footer-key_enlaces{display: table-cell; width: 50%; text-align: right; vertical-align: middle;}
+  .tpl-footer-key ul li{display: inline-block;vertical-align: bottom; position: relative;}
+  .tpl-footer-key ul li:not(:first-of-type):before{content: "| "; font: 14px 'Roboto';}
+  .tpl-footer-key .sta-footer-key_enlaces{padding-right: 10px;}
+  .tpl-footer-key ul{margin: 0;}
+}
+/* fin tpl-footer-key */
+>>>>>>> Xoan
