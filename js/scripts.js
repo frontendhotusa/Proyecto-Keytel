@@ -4,8 +4,9 @@
 (function (o, $, h) {
   if (o) {
     var $o = $(o),
-      $het = $(o.querySelector('.sta-header-bt_abs')),
-      $lis = o.querySelectorAll('.sta-header-bt_list > li');
+      $het = $(o.querySelector('.sta-header-key_abs')),
+      $lis = o.querySelectorAll('.sta-header-key_list > li'),
+      domi = location.origin + location.pathname;
 
     //control resize
     function c() {
@@ -27,26 +28,18 @@
       if (id.length)
         $("html,body").animate({ scrollTop: id.offset().top - $het.innerHeight() }, 1e3);
     };
+
     $.each($lis, function (i, e) {
-      var $a = $('a', e);
-      if ($a.length) {
-        var href = $a.attr('href');
-        if (href && href.indexOf('#') == 0) {
-          $a.click(function (e) {
-            s(e, $(href))
-            change($(this));
-          });
+      var $b = $('button', e);
+      if ($b.length) {
+        var href = $b.data('url');
+        if ( href && href.indexOf(domi) >= 0 ) {
+          $b.parent().addClass('sta-actual')
         };
       };
     });
 
-    //control actual
-    function change(e) {
-      $(o.querySelectorAll('.sta-header-bt_list > .sta-actual')).removeClass('sta-actual');
-      e.parent().addClass('sta-actual');
-    };
-
     //control fixed
     h.controlTop($(o));
   };
-})(document.querySelector('.tpl-header-bt'), jQuery, hotusa())
+})(document.querySelector('.tpl-header-key'), jQuery, hotusa())
