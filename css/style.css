@@ -22,7 +22,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-cabecera-key .sta-cabecera-key_max{margin: 0 auto;position: relative;z-index: 1;}
 .tpl-cabecera-key .sta-cabecera-key_table{display: table;width: 100%}
 .tpl-cabecera-key .sta-cabecera-key_cell{display: table-cell;}
-.tpl-cabecera-key .sta-cabecera-key_txt{font: italic 24px 'Libre Baskerville', serif; color: #fff;padding: 0 20px;margin: 150px 0 100px;text-shadow: 1px 10 px #ff0000;}
+.tpl-cabecera-key .sta-cabecera-key_txt{font: italic 24px 'Libre Baskerville', serif; color: #fff;padding: 0 20px;margin: 150px 0 100px;text-shadow: 1px 1px #000;}
 .tpl-cabecera-key .sta-cabecera-key_contForm{background: #00613f;color: #fff; padding: 30px;border-left: 4px solid #e6c300;position:absolute;left: 0;top: 100%;right: 0}
 .tpl-cabecera-key .sta-cabecera-key_titleForm{font: italic 18px 'Libre Baskerville', serif;margin-bottom:3px }
 .tpl-cabecera-key .sta-cabecera-key_subtitleForm{font: 300 14px 'Roboto', serif; margin-bottom: 20px }
