@@ -60,6 +60,6 @@
         elem.html('<img src="'+img+'">');
       }
     }
-    hotusa().cargaScrollAuto(p,f);
+    h.cargaScrollAuto(p,f);
   };
 })(document.querySelector('.tpl-map-key'), jQuery, hotusa())
