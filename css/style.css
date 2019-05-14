@@ -16,6 +16,38 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .modulo_ejemplo{}
 /* FIN modulo ejemplo */
 
+/* tpl-cabecera-key */
+.tpl-cabecera-key{position: relative;}
+.tpl-cabecera-key .sta-cabecera-key_imgActual{display:block;background-position: center;background-repeat: no-repeat;background-size: cover;width: 100%;position: absolute;left: 0;top: 0; bottom: 0}
+.tpl-cabecera-key .sta-cabecera-key_max{margin: 0 auto;position: relative;z-index: 1;}
+.tpl-cabecera-key .sta-cabecera-key_table{display: table;width: 100%}
+.tpl-cabecera-key .sta-cabecera-key_cell{display: table-cell;}
+.tpl-cabecera-key .sta-cabecera-key_txt{font: italic 24px 'Libre Baskerville', serif; color: #fff;padding: 0 20px;margin: 150px 0 100px;text-shadow: 1px 10 px #ff0000;}
+.tpl-cabecera-key .sta-cabecera-key_contForm{background: #00613f;color: #fff; padding: 30px;border-left: 4px solid #e6c300;position:absolute;left: 0;top: 100%;right: 0}
+.tpl-cabecera-key .sta-cabecera-key_titleForm{font: italic 18px 'Libre Baskerville', serif;margin-bottom:3px }
+.tpl-cabecera-key .sta-cabecera-key_subtitleForm{font: 300 14px 'Roboto', serif; margin-bottom: 20px }
+.tpl-cabecera-key .sta-error{display: none}
+.tpl-cabecera-key .sta-cabecera-key_input{position: relative;display: block;margin-bottom: 20px;}
+.tpl-cabecera-key .sta-cabecera-key_input input{background: #fff;padding: 24px 15px 12px ;width: 100%;box-sizing: border-box;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid transparent;transition: .3s;font: bold 14px 'Roboto', serif;color: #000;}
+.tpl-cabecera-key .sta-cabecera-key_input span{font: 12px 'Roboto', serif;color: #666;position: absolute;top: 10px;left: 17px;text-align: left;}
+.tpl-cabecera-key .sta-cabecera-key_subTable{display: table; width: 100%;text-align: right}
+.tpl-cabecera-key .sta-cabecera-key_subCell{position: relative;display: table-cell;text-align: left;vertical-align: middle;cursor: pointer;font: 300 16px 'Roboto', serif}
+.tpl-cabecera-key .sta-cabecera-key_label span{display: block;padding-left: 35px;position: relative;padding-top: 8px;}
+.tpl-cabecera-key .sta-cabecera-key_recuerdame:checked + span:after{content: '\e0a9';font: 18px/1px 'Icons';position: absolute;left: 0;top: 20px;width: 25px;text-align: center;color: #00613f;transition: .3s;}
+.tpl-cabecera-key .sta-cabecera-key_subCell span:before{content: '';position: absolute;left: 0;top: 5px;width: 25px;height: 25px;background: #fff;box-shadow: 0 0 7px 0 rgba(0,0,0,.5);}
+.tpl-cabecera-key .sta-cabecera-key_recuerdame{position: absolute;left: 6px;top: 36px;height: auto;width: auto;z-index: 0;opacity: 0;}
+.tpl-cabecera-key .sta-cabecera-key_btn{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 1px solid #e6c300;cursor: pointer;transition: .3s;padding: 20px 30px;}
+
+@media (min-width: 801px){
+  .tpl-cabecera-key{padding: 200px 10px 0}
+  .tpl-cabecera-key .sta-cabecera-key_max{max-width: 1220px;position: relative;}
+  .tpl-cabecera-key .sta-cabecera-key_table{width: 55%;padding-right: 50px; box-sizing: border-box}
+  .tpl-cabecera-key .sta-cabecera-key_txt{font-size: 48px; margin-bottom: 200px; margin-top: 20px}
+  .tpl-cabecera-key .sta-cabecera-key_contForm{position: absolute;top: 0;left: 55%;margin: 0;right:0}
+}
+
+/* FIN tpl-cabecera-key */
+
 /* tpl-boxes3-key */
 .tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
 .tpl-boxes3-key .sta-boxes3-key_title{color: #00613f; font-style: italic; margin-bottom: 10px;}
@@ -42,8 +74,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-ventajas-key .sta-ventajas-key_superior{color: #666; padding: 30px; max-width: 700px;margin: 0 auto;}
 .tpl-ventajas-key .sta-ventajas-key_title{font: italic 24px 'Libre Baskerville', serif;margin-bottom: 20px}
 .tpl-ventajas-key .sta-ventajas-key_subtitle{font: 300 14px 'Roboto', sans-serif}
-.tpl-ventajas-key .sta-ventajas-key_inferior{}
-.tpl-ventajas-key .sta-ventajas-key_boxes{}
 .tpl-ventajas-key .sta-ventajas-key_box{width: 290px; height: 380px; display: inline-block;position: relative;margin: 0 7.5px 20px}
 .tpl-ventajas-key .sta-ventajas-key_imgBox{position: absolute; bottom: 100%;left: 0;background-size: cover;background-position: center; background-repeat: no-repeat}
 .tpl-ventajas-key .sta-ventajas-key_titleBox{padding:20px;font: italic 400 20px/25px 'Libre Baskerville', serif;background: rgba(0,97,63,70%); text-align: center;color: #fff;position:absolute; bottom: 0;left: 0;right: 0}
@@ -53,8 +83,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-ventajas-key .sta-ventajas-key_superior{ padding: 55px 30px 10px}
 .tpl-ventajas-key .sta-ventajas-key_title{font-size:36px}
 .tpl-ventajas-key .sta-ventajas-key_subtitle{font-size:16px}
-.tpl-ventajas-key .sta-ventajas-key_inferior{}
-.tpl-ventajas-key .sta-ventajas-key_boxes{}
 .tpl-ventajas-key .sta-ventajas-key_box{margin: 0 6px 50px}
 .tpl-ventajas-key .sta-ventajas-key_titleBox{font-size: 30px; line-height: 36px}
 }

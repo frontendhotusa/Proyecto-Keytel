@@ -12,10 +12,8 @@
 </head>
 <body>
 
-
 <div class="tpl-cabecera-key">
   <div class="sta-cabecera-key_galeria">
-    <div class="sta-cabecera-key_imgActual"></div>
   </div>
   <div class="sta-cabecera-key_max">
 
@@ -43,16 +41,12 @@
         </div>
         <div class="sta-cabecera-key_subTable">
           <div class="sta-cabecera-key_subCell">
-            <label class="sta-label">
-              <input class="recuerdame" type="checkbox" required>
+            <label class="sta-cabecera-key_label">
+              <input class="sta-cabecera-key_recuerdame" type="checkbox" required>
               <span>Recordarme</span>
             </label>
           </div> 
-          <div class="sta-cabecera-key_subCell">
-            <div class="sta-cabecera-key_contButton">
-              <button>Entrar</button>
-            </div>
-          </div>
+          <button class="sta-cabecera-key_btn">Entrar</button>
         </div>
       </form>
     </div>
@@ -62,6 +56,80 @@
 
 
 
-<script src="../scripts.js"></script>
+
+<script src="../js/scripts.js"></script>
+
+
+<script>
+
+  (function (o, $, h) {
+
+   if(o){
+
+      function nameFind(url) {
+        var aSrc = url.split("/");
+        return aSrc[ aSrc.length - 1 ];
+      }
+
+      function cargarImg(b,_c){
+        var img = new Image();
+        img.src = b;
+
+        img.onload = function(){
+          _c
+            ? $pGaleria.append( $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"')"}) )
+            : $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"');display:none"}).appendTo( $pGaleria ).fadeIn(1e3, function () {
+                $(this).siblings().remove();
+              });
+
+          if ( fotos.length > 1) {
+            _cont++;
+            if (!fotos[_cont]) _cont=0;
+
+            setTimeout(function () {
+              cargarImg(fotos[_cont]);
+            },5e3);
+          };
+
+        };
+
+        img.onerror = function(){
+          var rem = nameFind(this.src);
+          fotos.splice(fotos.findIndex(function(e){
+            return nameFind(e) == rem
+          }),1);
+
+          if (!fotos[_cont]) _cont = 0;
+
+          if(fotos.length) cargarImg(fotos[_cont],_c);
+
+        };
+        
+      };
+
+
+      var $o = $(o),
+      $pGaleria = $(o.querySelector(".sta-cabecera-key_galeria")),
+      _cont = 0,
+      fotos = ["../images/fondo-cabecera-slide-1.jpg","../images/fondo-cabecera-slide-2.jpg","../images/fondo-cabecera-slide-3.jpg","../images/fondo-cabecera-slide-4.jpg"];
+
+      cargarImg(fotos[_cont],true);
+
+      
+
+
+      hotusa().cargaScrollAuto({ obj : o, dual : true}, function(){ 
+        // cargarImg(o.querySelector('.sta-cabecera-mr_edif1'), true);
+      });
+
+      $(o.querySelector('.sta-cabecera-mr_bottom')).click(function(){
+        var n = header ? $('.tpl-header-mr .sta-header-mr_abs').outerHeight() : 0;
+        ani.animate({scrollTop : $o.offset().top + $o.innerHeight() - n}, 1e3);
+      });
+   }
+  })(document.querySelector('.tpl-cabecera-key'), jQuery, hotusa());
+
+
+</script>
 </body>
 </html>
