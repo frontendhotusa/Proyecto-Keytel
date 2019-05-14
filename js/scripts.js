@@ -42,4 +42,24 @@
     //control fixed
     h.controlTop($(o));
   };
-})(document.querySelector('.tpl-header-key'), jQuery, hotusa())
+})(document.querySelector('.tpl-header-key'), jQuery, hotusa());
+
+
+
+(function (o, $, h) {
+  if (o) {
+    var p = {
+      obj : $('.tpl-map-key'),
+      before : 10,
+      dual : true
+    };
+    var f = function(){
+      var img = $('.sta-map-key_image').data('img'),
+      elem = $('.sta-map-key_image');
+      if(elem){
+        elem.html('<img src="'+img+'">');
+      }
+    }
+    hotusa().cargaScrollAuto(p,f);
+  };
+})(document.querySelector('.tpl-map-key'), jQuery, hotusa())
