@@ -13,11 +13,10 @@
 <body>
 
 <div class="tpl-cabecera-key">
-  <div class="sta-cabecera-key_galeria">
-  </div>
   <div class="sta-cabecera-key_max">
-
+    
     <div class="sta-cabecera-key_table">
+      <div class="sta-cabecera-key_galeria"></div>
       <div class="sta-cabecera-key_cell">
         <div class="sta-cabecera-key_txt">Lo que realmente importa en la nueva era de los viajes de negocios</div>
       </div>
@@ -34,9 +33,9 @@
         </label>
         <label class="sta-cabecera-key_input">
           <span>Contraseña</span>
-          <input class="contra" type="password" required>
+          <input class="contra sta-cabecera-key_pass" type="password" required>
         </label>
-        <div class="sta-error">
+        <div class="sta-error _sta-ko">
           errores
         </div>
         <div class="sta-cabecera-key_subTable">
@@ -54,81 +53,11 @@
   </div>
 </div>
 
-<div>hola</div>
-
 
 <script src="../js/scripts.js"></script>
 
 
 <script>
-
-  (function (o, $, h) {
-
-   if(o){
-
-      function nameFind(url) {
-        var aSrc = url.split("/");
-        return aSrc[ aSrc.length - 1 ];
-      }
-
-      function cargarImg(b,_c){
-        var img = new Image();
-        img.src = b;
-
-        img.onload = function(){
-          _c
-            ? $pGaleria.append( $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"')"}) )
-            : $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"');display:none"}).appendTo( $pGaleria ).fadeIn(1e3, function () {
-                $(this).siblings().remove();
-              });
-
-          if ( fotos.length > 1) {
-            _cont++;
-            if (!fotos[_cont]) _cont=0;
-
-            setTimeout(function () {
-              cargarImg(fotos[_cont]);
-            },5e3);
-          };
-
-        };
-
-        img.onerror = function(){
-          var rem = nameFind(this.src);
-          fotos.splice(fotos.findIndex(function(e){
-            return nameFind(e) == rem
-          }),1);
-
-          if (!fotos[_cont]) _cont = 0;
-
-          if(fotos.length) cargarImg(fotos[_cont],_c);
-
-        };
-        
-      };
-
-
-      var $o = $(o),
-      $pGaleria = $(o.querySelector(".sta-cabecera-key_galeria")),
-      _cont = 0,
-      fotos = ["../images/fondo-cabecera-slide-1.jpg","../images/fondo-cabecera-slide-2.jpg","../images/fondo-cabecera-slide-3.jpg","../images/fondo-cabecera-slide-4.jpg","../images/fondo-cabecera-slide-5.jpg","../images/fondo-cabecera-slide-6.jpg","../images/fondo-cabecera-slide-7.jpg","../images/fondo-cabecera-slide-8.jpg","../images/fondo-cabecera-slide-9.jpg"];
-
-      cargarImg(fotos[_cont],true);
-
-      
-
-
-      hotusa().cargaScrollAuto({ obj : o, dual : true}, function(){ 
-        // cargarImg(o.querySelector('.sta-cabecera-mr_edif1'), true);
-      });
-
-      $(o.querySelector('.sta-cabecera-mr_bottom')).click(function(){
-        var n = header ? $('.tpl-header-mr .sta-header-mr_abs').outerHeight() : 0;
-        ani.animate({scrollTop : $o.offset().top + $o.innerHeight() - n}, 1e3);
-      });
-   }
-  })(document.querySelector('.tpl-cabecera-key'), jQuery, hotusa());
-
 
 </script>
 </body>

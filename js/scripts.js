@@ -46,20 +46,47 @@
 
 
 
+
 (function (o, $, h) {
-  if (o) {
-    var p = {
-      obj : $('.tpl-map-key'),
-      before : 10,
-      dual : true
-    };
-    var f = function(){
-      var img = $('.sta-map-key_image').data('img'),
-      elem = $('.sta-map-key_image');
-      if(elem){
-        elem.html('<img src="'+img+'">');
-      }
-    }
-    h.cargaScrollAuto(p,f);
-  };
-})(document.querySelector('.tpl-map-key'), jQuery, hotusa())
+  if(o){
+     function nameFind(url) {
+       var aSrc = url.split("/");
+       return aSrc[ aSrc.length - 1 ];
+     };
+     function cargarImg(b,_c){
+       var img = new Image();
+       img.src = b;
+       img.onload = function(){
+         _c
+           ? $pGaleria.append( $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"')"}) )
+           : $("<div></div>",{class:"sta-cabecera-key_imgActual",style:"background-image:url('"+this.src+"');display:none"}).appendTo( $pGaleria ).fadeIn(1e3, function () {
+               $(this).siblings().remove();
+             });
+         if ( fotos.length > 1) {
+           _cont++;
+           if (!fotos[_cont]) _cont=0;
+
+           setTimeout(function () {
+             cargarImg(fotos[_cont]);
+           },5e3);
+         };
+       };
+       img.onerror = function(){
+         var rem = nameFind(this.src);
+         fotos.splice(fotos.findIndex(function(e){
+           return nameFind(e) == rem
+         }),1);
+         if (!fotos[_cont]) _cont = 0;
+         if(fotos.length) cargarImg(fotos[_cont],_c);
+       };
+     };
+
+     var $o = $(o),
+     $pGaleria = $(o.querySelector(".sta-cabecera-key_galeria")),
+     _cont = 0,
+     fotos = ["../images/fondo-cabecera-slide-1.jpg","../images/fondo-cabecera-slide-2.jpg","../images/fondo-cabecera-slide-3.jpg","../images/fondo-cabecera-slide-4.jpg","../images/fondo-cabecera-slide-5.jpg","../images/fondo-cabecera-slide-6.jpg","../images/fondo-cabecera-slide-7.jpg","../images/fondo-cabecera-slide-8.jpg","../images/fondo-cabecera-slide-9.jpg"];
+
+     cargarImg(fotos[_cont],true);
+  }
+ })(document.querySelector('.tpl-cabecera-key'), jQuery, hotusa());
+
