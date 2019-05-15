@@ -18,6 +18,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 /* tpl-cabecera-key */
 .tpl-cabecera-key{position: relative;}
+.tpl-cabecera-key.v2 .sta-cabecera-key_contForm{display: none;}
 .tpl-cabecera-key .sta-cabecera-key_imgActual{display:block;background-position: center;background-repeat: no-repeat;background-size: cover;width: 100%;position: absolute;left: 0;top: 0; bottom: 0;max-height: 308px}
 .tpl-cabecera-key .sta-cabecera-key_max{margin: 0 auto;position: relative;z-index: 1;}
 .tpl-cabecera-key .sta-cabecera-key_table{display: table;width: 100%;max-height: 308px}
