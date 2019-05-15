@@ -247,33 +247,3 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
   .tpl-fiveboxes-key.v2{padding: 60px 20px 50px;}
 }
 /* fin tpl-fiveboxes-key v2 */
-
-/* tpl-galeria-key */
-.tpl-galeria-key{}
-.tpl-galeria-key .sta-galeria-key_foto1,
-.tpl-galeria-key .sta-galeria-key-logo1,
-.tpl-galeria-key .sta-galeria-key_foto2,
-.tpl-galeria-key .sta-galeria-key-logo2,
-.tpl-galeria-key .sta-galeria-key_foto3,
-.tpl-galeria-key .sta-galeria-key-logo3,
-.tpl-galeria-key .sta-galeria-key_foto4,
-.tpl-galeria-key .sta-galeria-key-logo4,
-.tpl-galeria-key .sta-galeria-key_foto5,
-.tpl-galeria-key .sta-galeria-key-logo4{background-position: center; background-size: cover; background-repeat: no-repeat;}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-.tpl-galeria-key{}
-/* fin tpl-galeria-key */
