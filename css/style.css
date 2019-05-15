@@ -232,6 +232,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-boxestext-key .sta-boxestext-key_box:not(:last-of-type){margin-bottom: 20px;}
 .tpl-boxestext-key .sta-boxestext-key_title{font:italic 24px 'Libre Baskerville', serif; color: #00613f;}
 @media (min-width: 601px){
+  .tpl-boxestext-key .sta-boxestext-key_max{max-width: 1220px; margin: 0 auto;}
   .tpl-boxestext-key .sta-boxestext-key_box{display: inline-block; margin: 0 50px;}
 }
 /* fin tpl-boxestext-key */
