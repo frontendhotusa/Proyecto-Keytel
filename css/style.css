@@ -289,7 +289,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 }
 /* fin tpl-fiveboxes-key v2 */
 
-<<<<<<< HEAD
 /* tpl-paqueteTec-key */
 .tpl-paqueteTec-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #fff; padding: 20px}
 .tpl-paqueteTec-key .sta-paqueteTec-key_title{font: italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 15px;}
@@ -310,7 +309,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-paqueteTec-key */
 
 html{background: red}
-=======
 /* tpl-collage-key */
 .tpl-collage-key{background: #fff;padding: 40px 0 60px;}
 .tpl-collage-key .tpl-title-key{padding: 0 20px;}
@@ -399,4 +397,3 @@ html{background: red}
 .tpl-marcas-key{}
 .tpl-marcas-key{}
 /* fin tpl-marcas-key */
->>>>>>> origin/Xoan
