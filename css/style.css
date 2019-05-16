@@ -303,7 +303,6 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 }
 /* fin tpl-collage-key */
 
-
 /* tpl-marcas-key */
 .tpl-marcas-key{text-align: center; padding: 60px 30px 20px;}
 .tpl-marcas-key .sta-marcas-key_titulo{font: italic 36px 'Libre Baskerville', serif;color: #00613f;}
@@ -330,3 +329,10 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
   .tpl-marcas-key ul{text-align: center;}
 }
 /* fin tpl-marcas-key */
+
+/* tpl sixboxes (tpl-fiveboxes-key_six)*/
+.tpl-fiveboxes-key.six{background: #dadada; padding: 60px 20px;}
+@media (min-width: 601px){
+  .tpl-fiveboxes-key.six .sta-fiveboxes-key_box{margin: 14px; max-width: 170px;}
+}
+/* fin tpl sixboxes (tpl-fiveboxes-key_six) */
