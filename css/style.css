@@ -205,10 +205,10 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_subtitle:empty,
 .tpl-fiveboxes-key .sta-fiveboxes-key_contBtn:empty{display: none}
-.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative;color: #00613f}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
-.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 20px}
-.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 20px;}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 0px}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 15px;}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button:focus,
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button:hover{background: transparent;transition:.3s}
 .tpl-fiveboxes-key .sta-fiveboxes-key_box{max-width: 350px; margin: 0 auto;}
@@ -217,7 +217,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-fiveboxes-key .sta-fiveboxes-key_box:not(:last-of-type){margin-bottom: 30px;}
 
 @media (min-width: 601px){
-  .tpl-fiveboxes-key{padding: 90px 20px 70px;}
+  .tpl-fiveboxes-key{padding: 60px 20px 45px;}
   .tpl-fiveboxes-key .sta-fiveboxes-key_max{max-width: 1220px; margin: 0 auto;}
   .tpl-fiveboxes-key .sta-fiveboxes-key_cab{margin-bottom: 20px;}
   .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{max-width: 650px;}
@@ -259,9 +259,9 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-map-key */
 
 /* tpl-selechoteles-key */
-.tpl-selechoteles-key{text-align: center; color: #fff; padding: 60px 10px 20px; background: #fff;}
+.tpl-selechoteles-key{text-align: center; color: #fff; padding: 0 20px 20px; background: #fff;}
 .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 30px;}
-.tpl-selechoteles-key .sta-selechoteles-key_box{max-width: 240px; margin: 0 auto 20px; min-height: 305px; padding: 30px 30px 20px}
+.tpl-selechoteles-key .sta-selechoteles-key_box{max-width: 240px; margin: 0 auto 20px; min-height: 305px; padding: 30px 18px 20px}
 .tpl-selechoteles-key .sta-selechoteles-key_box:last-of-type{margin-bottom: 0;}
 .tpl-selechoteles-key .sta-selechoteles-key_box.sta-negro{background: #122530;}
 .tpl-selechoteles-key .sta-selechoteles-key_box.sta-azul{background: #0d2a5c;}
@@ -271,8 +271,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-selechoteles-key .sta-selechoteles-key_textcont{display: table-cell; vertical-align: bottom; padding: 0 25px 10px;}
 .tpl-selechoteles-key .sta-selechoteles-key_text{color: #fff; color: rgba(255, 255, 255, .5);margin-top: 15px;}
 @media (min-width: 601px){
-  .tpl-selechoteles-key{padding: 60px 25px 20px;}
-  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;}
+  .tpl-selechoteles-key{padding: 0 25px 20px;}
+  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;padding: 30px 30px 20px}
   .tpl-selechoteles-key .sta-selechoteles-key_max{max-width: 1280px;margin: 0 auto;}
   .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 20px;}
 }
@@ -375,7 +375,7 @@ html{background: red}
 /* fin tpl-collage-key */
 
 /* tpl-marcas-key */
-.tpl-marcas-key{text-align: center; padding: 60px 30px 20px;}
+.tpl-marcas-key{text-align: center; padding: 60px 20px 20px;}
 .tpl-marcas-key .sta-marcas-key_titulo{font: italic 36px 'Libre Baskerville', serif;color: #00613f;}
 .tpl-marcas-key .sta-marcas-key_title{font: italic 24px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 8px;}
 .tpl-marcas-key .sta-marcas-key_box{ margin: 35px auto;}
@@ -418,11 +418,12 @@ html{background: red}
 .tpl-contactBox-key .sta-contactBox-key_ubi{}
 .tpl-contactBox-key .sta-contactBox-key_ubi li{margin: 0 auto;display: inline-block;padding: 20px 30px;vertical-align: top}
 .tpl-contactBox-key .sta-contactBox-key_city{text-transform: uppercase; font:italic 14px 'Libre Baskerville', serif}
-.tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 20px;margin: 10px 5px}
+.tpl-contactBox-key .sta-contactBox-key_contBtn{margin-top: 10px}
+.tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 10px;margin: 10px 5px}
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:focus,
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:hover{background: transparent;transition:.3s}
 @media (min-width: 801px){
-  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff;}
+  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 60px 20px 40px; background: #fff;}
   .tpl-contactBox-key .sta-contactBox-key_title{font:italic 36px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 50px}
   .tpl-contactBox-key .sta-contactBox-key_city{font-size: 18px}
 }
