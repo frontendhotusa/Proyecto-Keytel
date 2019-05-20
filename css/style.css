@@ -379,7 +379,7 @@ html{background: red}
 .tpl-marcas-key .sta-marcas-key_titulo{font: italic 36px 'Libre Baskerville', serif;color: #00613f;}
 .tpl-marcas-key .sta-marcas-key_title{font: italic 24px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 8px;}
 .tpl-marcas-key .sta-marcas-key_box{ margin: 35px auto;}
-.tpl-marcas-key .sta-marcas-key_subtitle{font: 16px 'Roboto'; color: #666666; margin-bottom: 15px;}
+.tpl-marcas-key .sta-marcas-key_subtitle{font: 16px 'Roboto'; color: #666666; margin-bottom: 15px; min-height: 90px;}
 .tpl-marcas-key ul li{display: inline-block; width: 190px; height: 90px; border: 1px solid #000; vertical-align: top; line-height: 90px;}
 .tpl-marcas-key ul li:not(:first-of-type){border-top-color: transparent;}
 .tpl-marcas-key ul li img{margin: 0 auto; vertical-align: middle;}
