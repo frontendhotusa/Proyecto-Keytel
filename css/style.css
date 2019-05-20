@@ -121,7 +121,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* FIN tpl-cabecera-key */
 
 /* tpl-boxes3-key */
-.tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
+.tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
 .tpl-boxes3-key .sta-boxes3-key_title{color: #00613f; font-style: italic; margin-bottom: 10px;}
 .tpl-boxes3-key .sta-boxes3-key_text{font-family: 'Roboto'; font-size: 14px; text-transform: uppercase; letter-spacing: .05em;}
 .tpl-boxes3-key .sta-boxes3-key_box:not(:last-of-type){ margin-bottom: 35px;}
@@ -203,8 +203,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* tpl-fiveboxes-key */
 .tpl-fiveboxes-key{text-align: center; font: 300 18px 'Roboto'; color: #666; background: #fff; padding: 20px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
-.tpl-fiveboxes-key .sta-fiveboxes-key_subtitle,
-.tpl-fiveboxes-key .sta-fiveboxes-key_contBtn{display: none}
+.tpl-fiveboxes-key .sta-fiveboxes-key_subtitle:empty,
+.tpl-fiveboxes-key .sta-fiveboxes-key_contBtn:empty{display: none}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 20px}
@@ -300,7 +300,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-fiveboxes-key v2 */
 
 /* tpl-paqueteTec-key */
-.tpl-paqueteTec-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #fff; padding: 20px}
+.tpl-paqueteTec-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #fff; padding:60px 30px 20px}
 .tpl-paqueteTec-key .sta-paqueteTec-key_title{font: italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 15px;}
 .tpl-paqueteTec-key .sta-paqueteTec-key_box{max-width: 400px; margin: 0 auto;}
 .tpl-paqueteTec-key .sta-paqueteTec-key_img{display: block;margin: 0 auto;}
@@ -400,7 +400,6 @@ html{background: red}
   .tpl-marcas-key ul{text-align: center;}
 }
 /* fin tpl-marcas-key */
-/* fin tpl-marcas-key */
 
 /* tpl sixboxes (tpl-fiveboxes-key_six)*/
 .tpl-fiveboxes-key.six{background: #dadada; padding: 60px 20px;}
@@ -408,3 +407,36 @@ html{background: red}
   .tpl-fiveboxes-key.six .sta-fiveboxes-key_box{margin: 14px; max-width: 170px;}
 }
 /* fin tpl sixboxes (tpl-fiveboxes-key_six) */
+
+
+
+/* tpl-contactBox-key */
+.tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff;}
+.tpl-contactBox-key .sta-contactBox-key_max{}
+.tpl-contactBox-key .sta-contactBox-key_title{font:italic 24px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 20px;margin-bottom: 20px;position: relative}
+.tpl-contactBox-key .sta-contactBox-key_title:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
+.tpl-contactBox-key .sta-contactBox-key_ubi{}
+.tpl-contactBox-key .sta-contactBox-key_ubi li{margin: 0 auto;display: inline-block;padding: 20px 30px;vertical-align: top}
+.tpl-contactBox-key .sta-contactBox-key_city{text-transform: uppercase; font:italic 14px 'Libre Baskerville', serif}
+.tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 20px;margin: 10px 5px}
+.tpl-contactBox-key .sta-contactBox-key_contBtn button:focus,
+.tpl-contactBox-key .sta-contactBox-key_contBtn button:hover{background: transparent;transition:.3s}
+@media (min-width: 801px){
+  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff;}
+  .tpl-contactBox-key .sta-contactBox-key_title{font:italic 36px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 50px}
+  .tpl-contactBox-key .sta-contactBox-key_city{font-size: 18px}
+}
+/* fin tpl-contactBox-key */
+
+
+/* tpl-cabeceraNoHome-key */
+.tpl-cabeceraNoHome-key{}
+.tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_max{background-size: cover;background-position: center; background-repeat: no-repeat;margin: 0 auto;}
+.tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_txt{font: italic 24px 'Libre Baskerville', serif; color: #fff;text-shadow: 1px 1px 4px #000;padding: 140px 20px 50px}
+
+@media (min-width: 801px){
+  .tpl-cabeceraNoHome-key{}
+  .tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_max{min-height: 370px;}
+  .tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_txt{font-size: 36px; padding: 140px 50% 50px 30px}
+}
+/* fin tpl-cabeceraNoHome-key */
