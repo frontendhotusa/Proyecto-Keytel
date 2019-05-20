@@ -121,11 +121,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* FIN tpl-cabecera-key */
 
 /* tpl-boxes3-key */
-<<<<<<< HEAD
 .tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border-bottom:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
-=======
-.tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
->>>>>>> master
 .tpl-boxes3-key .sta-boxes3-key_title{color: #00613f; font-style: italic; margin-bottom: 10px;}
 .tpl-boxes3-key .sta-boxes3-key_text{font-family: 'Roboto'; font-size: 14px; text-transform: uppercase; letter-spacing: .05em;}
 .tpl-boxes3-key .sta-boxes3-key_box:not(:last-of-type){ margin-bottom: 35px;}
@@ -205,17 +201,10 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-footer-key */
 
 /* tpl-fiveboxes-key */
-<<<<<<< HEAD
-.tpl-fiveboxes-key{text-align: center; font: 300 16px 'Roboto'; color: #666; background: #fff; padding: 20px;}
-.tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
-.tpl-fiveboxes-key .sta-fiveboxes-key_subtitle,
-.tpl-fiveboxes-key .sta-fiveboxes-key_contBtn{display: none}
-=======
 .tpl-fiveboxes-key{text-align: center; font: 300 18px 'Roboto'; color: #666; background: #fff; padding: 20px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_subtitle:empty,
 .tpl-fiveboxes-key .sta-fiveboxes-key_contBtn:empty{display: none}
->>>>>>> master
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 20px}
@@ -311,11 +300,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-fiveboxes-key v2 */
 
 /* tpl-paqueteTec-key */
-<<<<<<< HEAD
-.tpl-paqueteTec-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #fff; padding: 20px}
-=======
 .tpl-paqueteTec-key{text-align: center; font: 16px 'Roboto'; color: #666; background: #fff; padding:60px 30px 20px}
->>>>>>> master
 .tpl-paqueteTec-key .sta-paqueteTec-key_title{font: italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 15px;}
 .tpl-paqueteTec-key .sta-paqueteTec-key_box{max-width: 400px; margin: 0 auto;}
 .tpl-paqueteTec-key .sta-paqueteTec-key_img{display: block;margin: 0 auto;}
