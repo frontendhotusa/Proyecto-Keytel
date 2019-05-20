@@ -201,7 +201,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-footer-key */
 
 /* tpl-fiveboxes-key */
-.tpl-fiveboxes-key{text-align: center; font: 300 18px 'Roboto'; color: #666; background: #fff; padding: 20px;}
+.tpl-fiveboxes-key{text-align: center; font: 300 16px 'Roboto'; color: #666; background: #fff; padding: 20px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_subtitle,
 .tpl-fiveboxes-key .sta-fiveboxes-key_contBtn{display: none}
