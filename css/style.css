@@ -417,5 +417,5 @@ html{background: red}
 .tpl-modal-key .sta-modal-key_cerrar{width: 20px; height: 20px; position: absolute; top: -25px; right: 0; z-index: 20px; font: 16px 'Icons';}
 .tpl-modal-key .sta-modal-key_cerrar:after{content:"\e142";}
 .tpl-modal-key .sta-modal-key_content{background: #fff; padding: 20px; max-width: 900px; margin-top: 10px;}
-.tpl-modal-key .sta-modal-key_contenido{ width: 100%; color: #000;}
+.tpl-modal-key .sta-modal-key_contenido{width: 100%; color: #000;}
 /*FINMODAL*/ 
