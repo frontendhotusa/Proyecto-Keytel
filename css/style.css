@@ -121,7 +121,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* FIN tpl-cabecera-key */
 
 /* tpl-boxes3-key */
-.tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
+.tpl-boxes3-key{ text-align: center; font: 20px 'Libre Baskerville', serif; padding: 40px 20px; border-bottom-color: #00613f; border-bottom:1px solid rgba(0, 97, 63, .5); background-color: #fff;}
 .tpl-boxes3-key .sta-boxes3-key_title{color: #00613f; font-style: italic; margin-bottom: 10px;}
 .tpl-boxes3-key .sta-boxes3-key_text{font-family: 'Roboto'; font-size: 14px; text-transform: uppercase; letter-spacing: .05em;}
 .tpl-boxes3-key .sta-boxes3-key_box:not(:last-of-type){ margin-bottom: 35px;}
@@ -142,7 +142,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-ventajas-key{background: #fff}
 .tpl-ventajas-key .sta-ventajas-key_max{text-align: center;margin: 0 auto}
 .tpl-ventajas-key .sta-ventajas-key_superior{color: #666; padding: 30px; max-width: 700px;margin: 0 auto;}
-.tpl-ventajas-key .sta-ventajas-key_title{font: italic 24px 'Libre Baskerville', serif;margin-bottom: 20px}
+.tpl-ventajas-key .sta-ventajas-key_title{font: italic 24px 'Libre Baskerville', serif;margin-bottom: 20px; color: #00613f;}
 .tpl-ventajas-key .sta-ventajas-key_subtitle{font: 300 14px 'Roboto', sans-serif}
 .tpl-ventajas-key .sta-ventajas-key_box{width: 290px; height: 380px; display: inline-block;position: relative;margin: 0 7.5px 20px}
 .tpl-ventajas-key .sta-ventajas-key_imgBox{position: absolute; bottom: 100%;left: 0;background-size: cover;background-position: center; background-repeat: no-repeat}
@@ -375,7 +375,7 @@ html{background: red}
 /* fin tpl-collage-key */
 
 /* tpl-marcas-key */
-.tpl-marcas-key{text-align: center; padding: 60px 30px 20px;}
+.tpl-marcas-key{text-align: center; padding: 60px 30px 0;}
 .tpl-marcas-key .sta-marcas-key_titulo{font: italic 36px 'Libre Baskerville', serif;color: #00613f;}
 .tpl-marcas-key .sta-marcas-key_title{font: italic 24px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 8px;}
 .tpl-marcas-key .sta-marcas-key_box{ margin: 35px auto;}
@@ -408,3 +408,14 @@ html{background: red}
   .tpl-fiveboxes-key.six .sta-fiveboxes-key_box{margin: 14px; max-width: 170px;}
 }
 /* fin tpl sixboxes (tpl-fiveboxes-key_six) */
+
+/*MODAL*/
+.tpl-modal-key{position: fixed;left:0;top:0;right:0;bottom:0;overflow:auto;display:none; text-align: justify; padding: 40px 20px; color: #fff; background: rgba(0, 0, 0, .8);z-index: 300;}
+.tpl-modal-key .sta-modal-key_max{max-width: 940px;margin: 0 auto; position: relative;}
+.tpl-modal-key .sta-modal-key_title{text-align: center; font: bold 40px 'Roboto'; margin: 20px 0; position: relative; padding-bottom: 10px;}
+.tpl-modal-key .sta-modal-key_title:after{content: ""; width: 100px; height: 8px; background: #d5962c; bottom: 0; left: 0; right: 0; margin: 0 auto; position: absolute;}
+.tpl-modal-key .sta-modal-key_cerrar{width: 20px; height: 20px; position: absolute; top: -25px; right: 0; z-index: 20px; font: 16px 'Icons';}
+.tpl-modal-key .sta-modal-key_cerrar:after{content:"\e142";}
+.tpl-modal-key .sta-modal-key_content{background: #fff; padding: 20px; max-width: 900px; margin-top: 10px;}
+.tpl-modal-key .sta-modal-key_contenido{ width: 100%; color: #000;}
+/*FINMODAL*/ 
