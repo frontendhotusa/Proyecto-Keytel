@@ -424,7 +424,6 @@ html{background: red}
 }
 /* fin tpl sixboxes (tpl-fiveboxes-key_six) */
 
-<<<<<<< HEAD
 /*MODAL*/
 .tpl-modal-key{position: fixed;left:0;top:0;right:0;bottom:0;overflow:auto;display:none; text-align: justify; padding: 40px 20px; color: #fff; background: rgba(0, 0, 0, .8);z-index: 300;}
 .tpl-modal-key .sta-modal-key_max{max-width: 940px;margin: 0 auto; position: relative;}
@@ -435,7 +434,6 @@ html{background: red}
 .tpl-modal-key .sta-modal-key_content{background: #fff; padding: 20px; max-width: 900px; margin-top: 10px;}
 .tpl-modal-key .sta-modal-key_contenido{width: 100%; color: #000;}
 /*FINMODAL*/ 
-=======
 
 
 /* tpl-contactBox-key */
@@ -464,4 +462,3 @@ html{background: red}
   .tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_txt{font-size: 36px; padding: 140px 50% 50px 30px}
 }
 /* fin tpl-cabeceraNoHome-key */
->>>>>>> master
