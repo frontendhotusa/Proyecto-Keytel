@@ -121,3 +121,89 @@ var openModalAviso = (function(o,$,h){
   return new Function;
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
+
+
+
+
+
+
+(function (o, $, h) {
+  if(o){
+
+    
+
+    var _form = {
+      $nombrehot : $('.sta-form-key_nombrehot'),
+      $direccion : $('.sta-form-key_direccion'),
+      $poblacion : $('.sta-form-key_poblacion'),
+      $codigo : $('.sta-form-key_codigo'),
+      $provincia : $('.sta-form-key_provincia'),
+      $pais : $('.sta-form-key_pais'),
+      $telefono : $('.sta-form-key_telef'),
+      $nombre : $('.sta-form-key_nombre'),
+      $apellidos : $('.sta-form-key_apellidos'),
+      $cargo : $('.sta-form-key_cargo'),
+      $email : $('.sta-form-key_email'),
+      $repemail : $('.sta-form-key_repemail')
+    },
+    contr = [],
+    valid = 1,
+    mail = 0,
+    remail = 0;
+    $('input[type=text]',o).change( function () {
+      var _t = $(this);
+      _t.val().trim() == '' ?
+        _t.removeClass('sta-fill') :
+        _t.addClass('sta-fill');
+    });
+    function validar(){
+      
+      for (var key in _form) {
+        var i = _form[key],
+        e = 0;
+        
+        if(i.val().trim() == ''){
+          _form[key].parent().addClass('sta-ko');
+          contr.push('0');
+        }else{
+          _form[key].parent().removeClass('sta-ko');
+          contr.push('1');
+        }
+      };
+
+      if(!h.mail(_form.$email.val().trim())){
+        _form.$email.parent().addClass('sta-ko');
+        mail = 0;
+      }else{
+        _form.$email.parent().removeClass('sta-ko');
+        mail = 1;
+      };
+      if(!h.mail(_form.$email.val().trim()) || !h.mail(_form.$repemail.val().trim()) || _form.$email.val().trim() != _form.$repemail.val().trim()){
+        _form.$repemail.parent().addClass('sta-ko');
+        remail=0;
+      }else{
+        _form.$repemail.parent().removeClass('sta-ko');
+        remail=1;
+      };
+      e++
+      if(contr[e] == '0'){
+        valid = 0;
+      };
+
+
+    };
+    $('.sta-form-key_enviar').click(function(){
+      contr = [],
+      
+      validar();
+      if(valid && remail && mail){
+        console.log('enviar')
+      }else{
+        console.log('ERROR')
+        valid = 1;
+      }
+    });
+
+  }
+ })(document.querySelector('.tpl-form-key'), jQuery, hotusa());
+

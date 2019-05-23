@@ -454,42 +454,48 @@ html{background: red}
 
 
 /* form1 */
-.tpl-form-sub{text-align: left;padding: 30px; font: 14px 'Roboto'}
-.tpl-form-sub .sta-form-key_title{font: italic 36px 'Libre Baskerville', serif;color: #00613f; margin-bottom: 30px;}
-.tpl-form-sub .sta-form-key_form_title{font: italic 22px 'Libre Baskerville', serif;color: #00613f; margin-bottom: 15px}
-.tpl-form-sub .sta-form-key_label{position: relative;}
-.tpl-form-sub .sta-form-key_label span{position: absolute;left: 0; top:-2px; color: #666666; font-size: 16px; }
-.tpl-form-sub .sta-form-key_label input{border-bottom: 1px solid #00613f; width: 100%; font: 16px 'Roboto'; margin-bottom: 10px; height: 30px; }
-.tpl-form-sub .sta-form-key_titinput{font: bold 12px 'Roboto'; letter-spacing: 0.04em;}
-.tpl-form-sub .sta-form-key_check{position: relative;}
-.tpl-form-sub .sta-form-key_check span:before{content: "";position: absolute; top:2px; left: 0; width: 12px; height: 12px; background: #fff; border: 1px solid #00613f;}
-.tpl-form-sub .sta-form-key_check input ~ span:after{content:"";font-size: 0; transition: .3s; color: #00613f; }
-.tpl-form-sub .sta-form-key_check input:checked ~ span:after{content: "\e04d"; font: 12px 'Icons';position: absolute; top:2px; left: 0; color: #00613f; }
-.tpl-form-sub .sta-form-key_comentarios{border: 1px solid #00613f; width: calc(100% - 22px); min-height: 130px; padding: 10px;}
-.tpl-form-sub .sta-form-key_check span{margin-left: 3px;}
-.tpl-form-sub .sta-form-key_texcheck{margin-bottom: 7px;}
-.tpl-form-sub .sta-form-key_check{margin-bottom: 5px; }
-.tpl-form-sub .sta-form-key_texcheck{margin: 10px 0; }
-.tpl-form-sub .sta-form-key_table{display: table}
-.tpl-form-sub .sta-form-key_cell,
-.tpl-form-sub .sta-form-key_button{display: table-cell;}
-.tpl-form-sub .sta-form-key_cell{ width: 100%;}
-.tpl-form-sub .sta-form-key_button{text-align: right; width: 20%}
-.tpl-form-sub .sta-form-key_enviar{width: 100px; height: 40px; background: #e6c300; font: italic 16px 'Libre Baskerville', serif;color: #00613f; border: 2px solid #e6c300; transition: .3s; box-shadow: 0px 0px 4px 1px #000;}
-.tpl-form-sub .sta-form-key_enviar:hover{background: transparent;}
-.tpl-form-sub .sta-form-key_check{display: block;}
-.tpl-form-sub .sta-form-key_politicas ~ span a{color: #00613f; text-decoration: underline;}
+.tpl-form-key{text-align: left;padding: 30px; font: 14px 'Roboto'}
+.tpl-form-key .sta-form-key_title{font: italic 36px 'Libre Baskerville', serif;color: #00613f; }
+.tpl-form-key .sta-form-key_form_title{font: italic 22px 'Libre Baskerville', serif;color: #00613f; margin: 30px 0 15px}
+.tpl-form-key .sta-form-key_label{position: relative;}
+.tpl-form-key .sta-form-key_label span{position: absolute;left: 0; top:-2px; color: #666666; font-size: 16px; }
+.tpl-form-key .sta-form-key_label input{border-bottom: 1px solid #00613f; width: 100%; font: 16px 'Roboto'; margin-bottom: 10px; height: 30px; }
+.tpl-form-key .sta-form-key_titinput{font: bold 12px 'Roboto'; letter-spacing: 0.04em;}
+.tpl-form-key .sta-form-key_check{position: relative;}
+.tpl-form-key .sta-form-key_check span:before{content: "";position: absolute; top:1px; left: 0; width: 14px; height: 14px; background: #fff; border: 1px solid #00613f;}
+.tpl-form-key .sta-form-key_check input ~ span:after{content:"";font-size: 0; transition: .3s; color: #00613f; }
+.tpl-form-key .sta-form-key_check input:checked ~ span:after{content: "\e0a9"; font: 15px 'Icons';position: absolute; top:1px; left: 0; color: #00613f; }
+.tpl-form-key .sta-form-key_comentarios{border: 1px solid #00613f; width: calc(100% - 22px); min-height: 130px; padding: 10px;}
+.tpl-form-key .sta-form-key_check span{margin-left: 3px;}
+.tpl-form-key .sta-form-key_texcheck{margin-bottom: 7px;}
+.tpl-form-key .sta-form-key_check{margin-bottom: 5px; }
+.tpl-form-key .sta-form-key_texcheck{margin: 20px 0 10px; }
+.tpl-form-key .sta-form-key_table{display: table; margin-top: 20px;}
+.tpl-form-key .sta-form-key_cell,
+.tpl-form-key .sta-form-key_button{display: table-cell; vertical-align: middle;}
+.tpl-form-key .sta-form-key_cell{ width: 100%;}
+.tpl-form-key .sta-form-key_button{text-align: right; width: 20%}
+.tpl-form-key .sta-form-key_enviar{width: 100px; height: 40px; background: #e6c300; font: italic 16px 'Libre Baskerville', serif;color: #00613f; border: 2px solid #e6c300; transition: .3s; box-shadow: 0px 0px 4px 1px #000;}
+.tpl-form-key .sta-form-key_enviar:hover{background: transparent;}
+.tpl-form-key .sta-form-key_check{display: block;}
+.tpl-form-key .sta-form-key_politicas ~ span a{color: #00613f; text-decoration: underline;}
+.tpl-form-key .sta-ok{color: #00613f;}
+.tpl-form-key .sta-ko{color: #d34;}
+.tpl-form-key .sta-form-key_label.sta-ko input{border-bottom-color: #d34;}
+.tpl-form-key .sta-form-key_label.sta-ko div{color: #d34;}
+.tpl-form-key .sta-form-key_label input:focus ~ span,
+.tpl-form-key .sta-form-key_label input.sta-fill ~ span{display: none;}
 @media (min-width: 601px){
-  .tpl-form-sub .sta-form-key_container{max-width: 880px; margin: 0 auto;}
-  .tpl-form-sub .sta-form-key_dual{display: table; width: 100%;}
-  .tpl-form-sub .sta-form-key_label{display: table-cell;}
-  .tpl-form-sub .sta-form-key_label span{top: 21px;}
-  .tpl-form-sub .sta-form-key_dual .sta-form-key_label:nth-of-type(2n + 1) input{width: calc(100% - 25px);}
-  .tpl-form-sub .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)) input{width: calc(100% - 25px);}
-  .tpl-form-sub .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)){text-align: right;}
-  .tpl-form-sub .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)) .sta-form-key_titinput{margin-left: 25px; text-align: left;}
-  .tpl-form-sub .sta-form-key_label input{ width: 100%; }
-  .tpl-form-sub .sta-form-key_indi .sta-form-key_label{display: block; width: calc(50% - 25px);}
+  .tpl-form-key .sta-form-key_container{max-width: 880px; margin: 0 auto;}
+  .tpl-form-key .sta-form-key_dual{display: table; width: 100%;}
+  .tpl-form-key .sta-form-key_label{display: table-cell;}
+  .tpl-form-key .sta-form-key_label span{top: 21px;}
+  .tpl-form-key .sta-form-key_dual .sta-form-key_label:nth-of-type(2n + 1) input{width: calc(100% - 25px);}
+  .tpl-form-key .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)) input{width: calc(100% - 25px);}
+  .tpl-form-key .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)){text-align: right;}
+  .tpl-form-key .sta-form-key_dual .sta-form-key_label:not(:nth-of-type(2n + 1)) .sta-form-key_titinput{margin-left: 25px; text-align: left;}
+  .tpl-form-key .sta-form-key_label input{ width: 100%; }
+  .tpl-form-key .sta-form-key_indi .sta-form-key_label{display: block; width: calc(50% - 25px);}
 }
 
 /* fin form1 */
