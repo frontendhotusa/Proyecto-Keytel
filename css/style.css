@@ -437,3 +437,53 @@ html{background: red}
   .tpl-cabeceraNoHome-key .sta-cabeceraNoHome-key_txt{font-size: 36px; padding: 140px 50% 50px 30px}
 }
 /* fin tpl-cabeceraNoHome-key */
+
+/* tpl-contactForm-key */
+.tpl-contactForm-key{padding: 0 20px}
+.tpl-contactForm-key .sta-contactForm-key_max{margin: 0 auto}
+.tpl-contactForm-key .sta-contactForm-key_title{text-align: center; font: italic 30px 'Libre Baskerville', serif; color:#00613f; padding: 30px 0}
+.tpl-contactForm-key .sta-contactForm-key_form{}
+.tpl-contactForm-key .sta-contactForm-key_contSelect,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea,
+.tpl-contactForm-key .sta-contactForm-key_label{position: relative; display: block; margin-bottom: 30px;display: inline-block;width: 100%}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea{margin-bottom: 15px}
+.tpl-contactForm-key .sta-contactForm-key_label span,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea span,
+.tpl-contactForm-key .sta-contactForm-key_contSelect span{position: absolute; top:-15px;left: 0px;cursor: text; font: 12px 'Roboto', serif; color: #000}
+.tpl-contactForm-key .sta-contactForm-key_contSelect select,
+.tpl-contactForm-key .sta-contactForm-key_label input{width: 100%;border: 0;border-bottom: 1px solid #000;padding: 5px 6px 2px 0;font: 300 18px 'Roboto', serif ;box-sizing: border-box; color: #666}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea span{top:-20px}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea textarea{width: 100%;height:150px;border: 1px solid #000;display: inline-block;font: 300 18px 'Roboto', serif ; padding: 5px;color: #666;box-sizing: border-box}
+.tpl-contactForm-key .sta-contactForm-key_select{-webkit-appearance: none; appearance: none;}
+.tpl-contactForm-key .sta-contactForm-key_contSelect:before{position: absolute; top: 50%;right: 15px;content:'\e0b2';font: 15px/1px Icons}
+
+.tpl-contactForm-key .sta-contactForm-key_cell label{position: relative; display: block;}
+.tpl-contactForm-key .sta-contactForm-key_cell label input{position: absolute;left: 12px;top: 24px;height: 1px;width: 1px;}
+.tpl-contactForm-key .sta-contactForm-key_cell label span{display: block;padding: 5px 0 0 32px;position: relative;margin-bottom: 10px}
+.tpl-contactForm-key .sta-contactForm-key_cell label span a{color:#00613f;text-decoration: underline}
+.tpl-contactForm-key .sta-contactForm-key_cell label span:before{content: '';position: absolute;left: 5px;top: 5px;width: 15px;height: 15px;background: #fff;box-shadow: 0 0 3px 0 rgba(0,0,0,.3);}
+.tpl-contactForm-key .sta-contactForm-key_cell label span:after{content: '\e0a9';font: 1px/1px 'Icons';position: absolute;left: 0;top: 50%;width: 25px;text-align: center;color: transparent;transition: .3s;}
+.tpl-contactForm-key .sta-contactForm-key_cell label input:checked + span:after{font-size: 8px;color: #00613f;}
+.tpl-contactForm-key .sta-contactForm-key_cell > span{font-style: italic; margin-left: 30px}
+.tpl-contactForm-key .sta-contactForm-key_right{padding: 30px ; display: block; text-align: center}
+.tpl-contactForm-key .sta-contactForm-key_right button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 28px; }
+.tpl-contactForm-key .sta-contactForm-key_right button:hover,
+.tpl-contactForm-key .sta-contactForm-key_right button:focus{background: transparent;color: #e6c300;transition:.3s;color: #00613f}
+
+
+@media (min-width:601px){
+.tpl-contactForm-key .sta-contactForm-key_max{max-width: 800px}
+.tpl-contactForm-key .sta-contactForm-key_title{padding: 60px 0 40px}
+.tpl-contactForm-key .sta-contactForm-key_contSelect,
+.tpl-contactForm-key .sta-contactForm-key_label{width: 48%}
+.tpl-contactForm-key .sta-contactForm-key_label:nth-of-type(2),
+.tpl-contactForm-key .sta-contactForm-key_contSelect{float: right}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea{margin-bottom: 0}
+.tpl-contactForm-key .sta-contactForm-key_table{display: table;width: 100%}
+.tpl-contactForm-key .sta-contactForm-key_cell{display: table-cell;vertical-align: middle}
+.tpl-contactForm-key .sta-contactForm-key_right{padding-right: 0px;text-align: right}
+
+
+}
+
+/* FIN tpl-contactForm-key */
