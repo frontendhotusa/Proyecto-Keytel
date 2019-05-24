@@ -176,8 +176,7 @@ var openModalAviso = (function (o, $, h) {
       
       
       for (var key in _form) {
-        var i = _form[key],
-        e = 0;
+        var i = _form[key];
         if(i.val().trim() == ''){
           _form[key].parent().addClass('sta-ko');
           _boo = false;
