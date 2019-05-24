@@ -483,6 +483,12 @@ html{background: red}
 .tpl-form-key .sta-ko{color: #d34;}
 .tpl-form-key .sta-form-key_label.sta-ko input{border-bottom-color: #d34;}
 .tpl-form-key .sta-form-key_label.sta-ko div{color: #d34;}
+.tpl-form-key .sta-form-key_error .sta-form-key_ko,
+.tpl-form-key .sta-form-key_error .sta-form-key_ok{display: none;}
+.tpl-form-key .sta-form-key_error.sta-ko .sta-form-key_ko,
+.tpl-form-key .sta-form-key_error.sta-ok .sta-form-key_ok{display: block;}
+.tpl-form-key .sta-form-key_error.sta-ko .sta-form-key_ok,
+.tpl-form-key .sta-form-key_error.sta-ok .sta-form-key_ko{display: none;}
 .tpl-form-key .sta-form-key_label input:focus ~ span,
 .tpl-form-key .sta-form-key_label input.sta-fill ~ span{display: none;}
 @media (min-width: 601px){
