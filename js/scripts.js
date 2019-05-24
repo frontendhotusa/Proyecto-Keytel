@@ -90,3 +90,163 @@
   }
  })(document.querySelector('.tpl-cabecera-key'), jQuery, hotusa());
 
+
+
+
+
+
+
+
+
+ 
+var openModalAviso = (function (o, $, h) {
+  if (o) {
+
+    var $o = $(o),
+      $html = $('html');
+
+    $('.sta-modal-key_cerrar', o).click(close);
+
+    function open() {
+      $o.fadeIn(1e3);
+      $html.addClass('sta-noScroll');
+    }
+    function close() {
+      $o.fadeOut(1e3);
+      $html.removeClass('sta-noScroll');
+    }
+    $('.fn-openModalAviso').click(open);
+    return open;
+  } else {
+    return new Function;
+  };
+})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
+
+
+
+
+
+
+(function (o, $, h) {
+  if(o){
+
+    
+
+    var _form = {
+      $nombrehot : $('.sta-form-key_nombrehot',o),
+      $direccion : $('.sta-form-key_direccion',o),
+      $poblacion : $('.sta-form-key_poblacion',o),
+      $codigo : $('.sta-form-key_codigo',o),
+      $provincia : $('.sta-form-key_provincia',o),
+      $pais : $('.sta-form-key_pais',o),
+      $telefono : $('.sta-form-key_telef',o),
+      $nombre : $('.sta-form-key_nombre',o),
+      $apellidos : $('.sta-form-key_apellidos',o),
+      $cargo : $('.sta-form-key_cargo',o),
+      $email : $('.sta-form-key_email',o),
+      $repemail : $('.sta-form-key_repemail',o),
+      $politicas : $('.sta-form-key_politicas',o),
+    },
+    errores = {
+      $cont : $('.sta-form-key_error',o),
+      $conterror : $('.sta-form-key_ko',o),
+      $contok : $('.sta-form-key_ok',o),
+      $errellena : $('.sta-form-key_error-campos',o).val(),
+      $ermail : $('.sta-form-key_error-mail',o).val(),
+      $erremail : $('.sta-form-key_error-remail').val(),
+      $erpolitic : $('.sta-form-key_error-politicas',o).val(),
+      $erregistro : $('.sta-form-key_error-registro',o).val()
+
+    }
+
+    $('input[type=text]',o).change( function () {
+      var _t = $(this);
+      _t.val().trim() == '' ?
+        _t.removeClass('sta-fill') :
+        _t.addClass('sta-fill');
+    });
+    function validar(){
+      var _boo = true,
+      empty = true,
+      mail = true,
+      mail2 = true,
+      poli = true;
+
+    errores.$conterror.empty().parent().removeClass('sta-ok').removeClass('sta-ko');
+      
+      
+      for (var key in _form) {
+        var i = _form[key],
+        e = 0;
+        if(i.val().trim() == ''){
+          _form[key].parent().addClass('sta-ko');
+          _boo = false;
+          empty = false;
+        }else{
+          _form[key].parent().removeClass('sta-ko');
+        }
+      };
+
+
+
+      if(!h.mail(_form.$email.val().trim())){
+        _form.$email.parent().addClass('sta-ko');
+        mail = false;
+        _boo = false;
+      }else{
+        _form.$email.parent().removeClass('sta-ko');
+      };
+
+
+
+
+      if(!h.mail(_form.$email.val().trim()) || !h.mail(_form.$repemail.val().trim()) || _form.$email.val().trim() != _form.$repemail.val().trim()){
+        _form.$repemail.parent().addClass('sta-ko');
+        mail2 =false;
+        _boo = false;
+      }else{
+        _form.$repemail.parent().removeClass('sta-ko');
+      };
+
+
+      if(!_form.$politicas.prop('checked')){
+        _form.$politicas.parent().addClass('sta-ko');
+        poli = false;
+        _boo = false;
+      }else{
+        _form.$politicas.parent().removeClass('sta-ko')
+      };
+      
+      if(!empty || !mail || !mail2 || !poli){
+        errores.$cont.addClass('sta-ko')
+        if(!empty){
+          errores.$conterror.append(errores.$errellena + '<br />');
+        }
+        if(!mail){
+          errores.$conterror.append(errores.$ermail + '<br />');
+        }
+        if(!mail2){
+          errores.$conterror.append(errores.$erremail + '<br />');
+        }
+        if(!poli){
+          errores.$conterror.append(errores.$erpolitic + '<br />');
+        }
+      }
+      
+
+      return _boo;
+    };
+    $('.sta-form-key_enviar').click(function(){
+
+      if( validar() ){
+        errores.$cont.removeClass('sta-ko')
+        errores.$cont.addClass('sta-ok')
+
+        console.log('enviar')
+      }
+
+    });
+
+  }
+ })(document.querySelector('.tpl-form-key'), jQuery, hotusa());
+
