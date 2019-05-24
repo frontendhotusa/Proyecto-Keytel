@@ -133,23 +133,35 @@ var openModalAviso = (function(o,$,h){
     
 
     var _form = {
-      $nombrehot : $('.sta-form-key_nombrehot'),
-      $direccion : $('.sta-form-key_direccion'),
-      $poblacion : $('.sta-form-key_poblacion'),
-      $codigo : $('.sta-form-key_codigo'),
-      $provincia : $('.sta-form-key_provincia'),
-      $pais : $('.sta-form-key_pais'),
-      $telefono : $('.sta-form-key_telef'),
-      $nombre : $('.sta-form-key_nombre'),
-      $apellidos : $('.sta-form-key_apellidos'),
-      $cargo : $('.sta-form-key_cargo'),
-      $email : $('.sta-form-key_email'),
-      $repemail : $('.sta-form-key_repemail')
+      $nombrehot : $('.sta-form-key_nombrehot',o),
+      $direccion : $('.sta-form-key_direccion',o),
+      $poblacion : $('.sta-form-key_poblacion',o),
+      $codigo : $('.sta-form-key_codigo',o),
+      $provincia : $('.sta-form-key_provincia',o),
+      $pais : $('.sta-form-key_pais',o),
+      $telefono : $('.sta-form-key_telef',o),
+      $nombre : $('.sta-form-key_nombre',o),
+      $apellidos : $('.sta-form-key_apellidos',o),
+      $cargo : $('.sta-form-key_cargo',o),
+      $email : $('.sta-form-key_email',o),
+      $repemail : $('.sta-form-key_repemail',o),
+      $politicas : $('.sta-form-key_politicas',o),
+      $conterror : $('.sta-form-key_ko',o),
+      $contok : $('.sta-form-key_ok',o)
+    },
+    errores = {
+      $errellena : $('.sta-form-key_error-campos',o).val(),
+      $ermail : $('.sta-form-key_error-mail',o).val(),
+      $erremail : $('.sta-form-key_error-remail').val(),
+      $erpolitic : $('.sta-form-key_error-politicas',o).val(),
+      $erregistro : $('.sta-form-key_error-registro',o).val()
+
     },
     contr = [],
     valid = 1,
     mail = 0,
-    remail = 0;
+    remail = 0,
+    politic = 0;
     $('input[type=text]',o).change( function () {
       var _t = $(this);
       _t.val().trim() == '' ?
@@ -161,7 +173,6 @@ var openModalAviso = (function(o,$,h){
       for (var key in _form) {
         var i = _form[key],
         e = 0;
-        
         if(i.val().trim() == ''){
           _form[key].parent().addClass('sta-ko');
           contr.push('0');
@@ -185,6 +196,13 @@ var openModalAviso = (function(o,$,h){
         _form.$repemail.parent().removeClass('sta-ko');
         remail=1;
       };
+      if(!_form.$politicas.prop('checked')){
+        _form.$politicas.parent().addClass('sta-ko');
+        politic = 0;
+      }else{
+        _form.$politicas.parent().removeClass('sta-ko')
+        politic = 1;
+      };
       e++
       if(contr[e] == '0'){
         valid = 0;
@@ -196,9 +214,26 @@ var openModalAviso = (function(o,$,h){
       contr = [],
       
       validar();
-      if(valid && remail && mail){
+      if(valid && remail && mail && politic){
+        _form.$conterror.text('')
+        _form.$contok.text('')
+        _form.$contok.append('Enviado correctamente')
         console.log('enviar')
       }else{
+        _form.$conterror.text('')
+        _form.$contok.text('')
+        if(valid == 0){
+          _form.$conterror.append(errores.$errellena + '<br />');
+        }
+        if(mail == 0){
+          _form.$conterror.append(errores.$ermail + '<br />');
+        }
+        if(remail == 0){
+          _form.$conterror.append(errores.$erremail + '<br />');
+        }
+        if(politic == 0){
+          _form.$conterror.append(errores.$erpolitic + '<br />');
+        }
         console.log('ERROR')
         valid = 1;
       }
