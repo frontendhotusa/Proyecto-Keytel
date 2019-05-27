@@ -168,10 +168,6 @@ var openModalAviso = (function (o, $, h) {
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
-
-
-
-
 (function (o, $, h) {
   if(o){
 
@@ -293,4 +289,98 @@ var openModalAviso = (function (o, $, h) {
 
   }
  })(document.querySelector('.tpl-form-key'), jQuery, hotusa());
+
+ (function (o, $, h) {
+  if(o){    
+
+    var _form = {
+      $nombre : $('.sta-nombre',o),
+      $empresa : $('.sta-empresa',o),
+      $cargo : $('.sta-cargo',o),
+      $dpto : $('.sta-dpto',o),
+      $asunto : $('.sta-asunto',o),
+      $politica : $('.sta-politica',o)
+    },
+    errores = {
+      $cont : $('.sta-contactForm-key_error',o),
+      $conterror : $('.sta-contactForm-key_ko',o),
+      $contok : $('.sta-contactForm-key_ok',o),
+      $errellena : $('.sta-contactForm-key_error-campos',o).val(),
+      $ermail : $('.sta-contactForm-key_error-mail',o).val(),
+      $erremail : $('.sta-contactForm-key_error-remail',o).val(),
+      $erpolitic : $('.sta-contactForm-key_error-politicas',o).val(),
+      $erregistro : $('.sta-contactForm-key_error-registro',o).val()
+    };
+    
+    function validar(){
+      var _boo = true,
+      select = true,
+      empty = true,
+      mail = true,
+      mail2 = true,
+      poli = true;
+      
+    errores.$conterror.empty().parent().removeClass('sta-ok').removeClass('sta-ko');
+      
+      
+      for (var key in _form) {
+        var i = _form[key];
+        if(i.val().trim() == ''){
+          _form[key].parent().addClass('sta-ko');
+          _boo = false;
+          empty = false;
+        }else{
+          _form[key].parent().removeClass('sta-ko');
+        }
+      };
+
+      if(_form.$dpto.val() == ''){
+        _form.$dpto.parent().addClass('sta-ko');
+        select = false;
+        _boo = false;
+      }else{
+        _form.$dpto.parent().removeClass('sta-ko');
+      }
+
+      if(_form.$asunto.val() == ''){
+        _form.$asunto.parent().addClass('sta-ko');
+        _boo = false;
+      }else{
+        _form.$asunto.parent().removeClass('sta-ko');
+      }
+
+      if(!_form.$politica.prop('checked')){
+        _form.$politica.siblings().addClass('sta-ko');
+        poli = false;
+        _boo = false;
+      }else{
+        _form.$politica.siblings().removeClass('sta-ko')
+      };
+      
+      if(!empty || !poli){
+        errores.$cont.addClass('sta-ko')
+        if(!empty){
+          errores.$conterror.append(errores.$errellena + '<br />');
+        }
+       
+        if(!poli){
+          errores.$conterror.append(errores.$erpolitic + '<br />');
+        }
+      }
+      return _boo;
+    };
+    $('.sta-contactForm-key_enviar').click(function(){
+
+      if( validar() ){
+        errores.$cont.removeClass('sta-ko')
+        errores.$cont.addClass('sta-ok')
+
+        console.log('enviar')
+      }
+
+    });
+
+  }
+ })(document.querySelector('.tpl-contactForm-key'), jQuery, hotusa());
+
 

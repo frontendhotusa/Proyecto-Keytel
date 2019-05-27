@@ -205,10 +205,11 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-fiveboxes-key .sta-fiveboxes-key_cab{font:italic 36px 'Libre Baskerville', serif; color: #00613f; margin-bottom: 40px;}
 .tpl-fiveboxes-key .sta-fiveboxes-key_subtitle:empty,
 .tpl-fiveboxes-key .sta-fiveboxes-key_contBtn:empty{display: none}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative;color: #00613f}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{display:block;padding-bottom:30px;font:italic 24px 'Libre Baskerville', serif;max-width: 350px; margin: 0 auto;position: relative;color: #00613f;}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
-.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 20px}
-.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 20px;}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn{display:block;margin:30px 20px 0px}
+.tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 15px;}
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button:focus,
 .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_contBtn button:hover{background: transparent;transition:.3s}
 .tpl-fiveboxes-key .sta-fiveboxes-key_box{max-width: 350px; margin: 0 auto;}
@@ -217,7 +218,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-fiveboxes-key .sta-fiveboxes-key_box:not(:last-of-type){margin-bottom: 30px;}
 
 @media (min-width: 601px){
-  .tpl-fiveboxes-key{padding: 90px 20px 70px;}
+  .tpl-fiveboxes-key{padding: 60px 20px 45px;}
   .tpl-fiveboxes-key .sta-fiveboxes-key_max{max-width: 1220px; margin: 0 auto;}
   .tpl-fiveboxes-key .sta-fiveboxes-key_cab{margin-bottom: 20px;}
   .tpl-fiveboxes-key.v3 .sta-fiveboxes-key_subtitle{max-width: 650px;}
@@ -262,9 +263,9 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-map-key */
 
 /* tpl-selechoteles-key */
-.tpl-selechoteles-key{text-align: center; color: #fff; padding: 60px 10px 20px; background: #fff;}
+.tpl-selechoteles-key{text-align: center; color: #fff; padding: 0 20px 20px; background: #fff;}
 .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 30px;}
-.tpl-selechoteles-key .sta-selechoteles-key_box{max-width: 240px; margin: 0 auto 20px; min-height: 305px; padding: 30px 30px 20px}
+.tpl-selechoteles-key .sta-selechoteles-key_box{max-width: 240px; margin: 0 auto 20px; min-height: 305px; padding: 30px 18px 20px}
 .tpl-selechoteles-key .sta-selechoteles-key_box:last-of-type{margin-bottom: 0;}
 .tpl-selechoteles-key .sta-selechoteles-key_box.sta-negro{background: #122530;}
 .tpl-selechoteles-key .sta-selechoteles-key_box.sta-azul{background: #0d2a5c;}
@@ -274,8 +275,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-selechoteles-key .sta-selechoteles-key_textcont{display: table-cell; vertical-align: bottom; padding: 0 25px 10px;}
 .tpl-selechoteles-key .sta-selechoteles-key_text{color: #fff; color: rgba(255, 255, 255, .5);margin-top: 15px;}
 @media (min-width: 601px){
-  .tpl-selechoteles-key{padding: 60px 25px 20px;}
-  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;}
+  .tpl-selechoteles-key{padding: 0 25px 20px;}
+  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;padding: 30px 30px 20px}
   .tpl-selechoteles-key .sta-selechoteles-key_max{max-width: 1280px;margin: 0 auto;}
   .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 20px;}
 }
@@ -431,11 +432,12 @@ html{background: red}
 .tpl-contactBox-key .sta-contactBox-key_title:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
 .tpl-contactBox-key .sta-contactBox-key_ubi li{margin: 0 auto;display: inline-block;padding: 20px 30px;vertical-align: top}
 .tpl-contactBox-key .sta-contactBox-key_city{text-transform: uppercase; font:italic 14px 'Libre Baskerville', serif}
-.tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 20px;margin: 10px 5px}
+.tpl-contactBox-key .sta-contactBox-key_contBtn{margin-top: 10px}
+.tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 10px;margin: 10px 5px}
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:focus,
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:hover{background: transparent;transition:.3s}
 @media (min-width: 801px){
-  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff;}
+  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 60px 20px 40px; background: #fff;}
   .tpl-contactBox-key .sta-contactBox-key_title{font:italic 36px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 50px}
   .tpl-contactBox-key .sta-contactBox-key_city{font-size: 18px}
 }
@@ -452,6 +454,69 @@ html{background: red}
 }
 /* fin tpl-cabeceraNoHome-key */
 
+/* tpl-contactForm-key */
+.tpl-contactForm-key{padding: 0 20px}
+.tpl-contactForm-key .sta-contactForm-key_max{margin: 0 auto}
+.tpl-contactForm-key .sta-contactForm-key_title{text-align: center; font: italic 30px 'Libre Baskerville', serif; color:#00613f; padding: 30px 0}
+.tpl-contactForm-key .sta-contactForm-key_contSelect,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea,
+.tpl-contactForm-key .sta-contactForm-key_label{position: relative; display: block; margin-bottom: 30px;display: inline-block;width: 100%}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea{margin-bottom: 15px}
+.tpl-contactForm-key .sta-contactForm-key_label span,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea span,
+.tpl-contactForm-key .sta-contactForm-key_contSelect span{position: absolute; top:-15px;left: 0px;cursor: text; font: 12px 'Roboto', serif; color: #000}
+.tpl-contactForm-key .sta-contactForm-key_contSelect select,
+.tpl-contactForm-key .sta-contactForm-key_label input{width: 100%;border: 0;border-bottom: 1px solid #000;padding: 5px 6px 2px 0;font: 300 18px 'Roboto', serif ;box-sizing: border-box; color: #666}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea span{top:-20px}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea textarea{width: 100%;min-height:150px;border: 1px solid #000;display: inline-block;font: 300 18px 'Roboto', serif ; padding: 5px;color: #666;box-sizing: border-box}
+.tpl-contactForm-key .sta-contactForm-key_select{-webkit-appearance: none; appearance: none;}
+.tpl-contactForm-key .sta-contactForm-key_contSelect:before{position: absolute; top: 50%;right: 15px;content:'\e0b2';font: 15px/1px Icons}
+
+.tpl-contactForm-key .sta-contactForm-key_cell label{position: relative; display: block;}
+.tpl-contactForm-key .sta-contactForm-key_cell label input{position: absolute;left: 12px;top: 24px;height: 1px;width: 1px;}
+.tpl-contactForm-key .sta-contactForm-key_cell label span{display: block;padding: 5px 0 0 32px;position: relative;margin-bottom: 10px}
+.tpl-contactForm-key .sta-contactForm-key_cell label span a{color:#00613f;text-decoration: underline}
+.tpl-contactForm-key .sta-contactForm-key_cell label span:before{content: '';position: absolute;left: 5px;top: 5px;width: 15px;height: 15px;background: #fff;box-shadow: 0 0 3px 0 rgba(0,0,0,.3);}
+.tpl-contactForm-key .sta-contactForm-key_cell label span:after{content: '\e0a9';font: 1px/1px 'Icons';position: absolute;left: 0;top: 50%;width: 25px;text-align: center;color: transparent;transition: .3s;}
+.tpl-contactForm-key .sta-contactForm-key_cell label input:checked + span:after{font-size: 8px;color: #00613f;}
+.tpl-contactForm-key .sta-contactForm-key_cell > span{font-style: italic; margin-left: 30px}
+.tpl-contactForm-key .sta-contactForm-key_right{padding: 30px ; display: block; text-align: center}
+.tpl-contactForm-key .sta-contactForm-key_right button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 28px; }
+.tpl-contactForm-key .sta-contactForm-key_right button:hover,
+.tpl-contactForm-key .sta-contactForm-key_right button:focus{background: transparent;color: #e6c300;transition:.3s;color: #00613f}
+.tpl-contactForm-key .sta-contactForm-key_error{margin: 12px 0 10px 32px}
+.tpl-contactForm-key .sta-ok{color: #00613f;}
+.tpl-contactForm-key .sta-ko{color: #d34;}
+.tpl-contactForm-key .sta-contactForm-key_contSelect.sta-ko select,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea.sta-ko textarea,
+.tpl-contactForm-key .sta-contactForm-key_label.sta-ko input{border-color: #d34}
+.tpl-contactForm-key .sta-contactForm-key_cell.sta-contactForm-key_left > label > span.sta-ko:before{border: 1px solid #d34}
+.tpl-contactForm-key .sta-contactForm-key_label.sta-ko span,
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea.sta-ko span,
+.tpl-contactForm-key .sta-contactForm-key_contSelect.sta-ko span{color: #d34;}
+.tpl-contactForm-key .sta-contactForm-key_error .sta-contactForm-key_ko,
+.tpl-contactForm-key .sta-contactForm-key_error .sta-contactForm-key_ok{display: none;}
+.tpl-contactForm-key .sta-contactForm-key_error.sta-ko .sta-contactForm-key_ko,
+.tpl-contactForm-key .sta-contactForm-key_error.sta-ok .sta-contactForm-key_ok{display: block;}
+.tpl-contactForm-key .sta-contactForm-key_error.sta-ko .sta-contactForm-key_ok,
+.tpl-contactForm-key .sta-contactForm-key_error.sta-ok .sta-contactForm-key_ko{display: none;}
+
+@media (min-width:601px){
+.tpl-contactForm-key .sta-contactForm-key_max{max-width: 800px}
+.tpl-contactForm-key .sta-contactForm-key_title{padding: 60px 0 40px}
+.tpl-contactForm-key .sta-contactForm-key_contSelect,
+.tpl-contactForm-key .sta-contactForm-key_label{width: 48%}
+.tpl-contactForm-key .sta-contactForm-key_label:nth-of-type(2),
+.tpl-contactForm-key .sta-contactForm-key_contSelect{float: right}
+.tpl-contactForm-key .sta-contactForm-key_labelTextarea{margin-bottom: 0}
+.tpl-contactForm-key .sta-contactForm-key_table{display: table;width: 100%}
+.tpl-contactForm-key .sta-contactForm-key_cell{display: table-cell;vertical-align: middle}
+.tpl-contactForm-key .sta-contactForm-key_right{padding-right: 0px;text-align: right}
+
+
+}
+
+/* FIN tpl-contactForm-key */
 
 /* form1 */
 .tpl-form-key{text-align: left;font: 14px 'Roboto'}
