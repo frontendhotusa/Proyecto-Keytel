@@ -110,6 +110,55 @@ var openModalAviso = (function (o, $, h) {
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
+<<<<<<< HEAD
+=======
+var openModalPoli = (function (o, $, h) {
+  if (o) {
+
+    var $o = $(o),
+      $html = $('html');
+
+    $('.sta-modal-key_cerrar', o).click(close);
+
+    function open() {
+      $o.fadeIn(1e3);
+      $html.addClass('sta-noScroll');
+    }
+    function close() {
+      $o.fadeOut(1e3);
+      $html.removeClass('sta-noScroll');
+    }
+    $('.fn-openModalAviso').click(open);
+    return open;
+  } else {
+    return new Function;
+  };
+})(document.querySelector('#aviso'), jQuery, hotusa()); 
+
+var openModalAviso = (function (o, $, h) {
+  if (o) {
+
+    var $o = $(o),
+      $html = $('html');
+
+    $('.sta-modal-key_cerrar', o).click(close);
+
+    function open() {
+      $o.fadeIn(1e3);
+      $html.addClass('sta-noScroll');
+    }
+    function close() {
+      $o.fadeOut(1e3);
+      $html.removeClass('sta-noScroll');
+    }
+    $('.fn-openModalAviso').click(open);
+    return open;
+  } else {
+    return new Function;
+  };
+})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
+
+>>>>>>> origin/master
 (function (o, $, h) {
   if(o){
 
@@ -156,8 +205,7 @@ var openModalAviso = (function (o, $, h) {
     errores.$conterror.empty().parent().removeClass('sta-ok').removeClass('sta-ko');
       
       for (var key in _form) {
-        var i = _form[key],
-        e = 0;
+        var i = _form[key];
         if(i.val().trim() == ''){
           _form[key].parent().addClass('sta-ko');
           _boo = false;
