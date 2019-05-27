@@ -133,7 +133,7 @@ var openModalPoli = (function (o, $, h) {
   };
 })(document.querySelector('#aviso'), jQuery, hotusa()); 
 
-var openModalAviso = (function (o, $, h) {
+var openModalCondi = (function (o, $, h) {
   if (o) {
 
     var $o = $(o),
@@ -154,7 +154,7 @@ var openModalAviso = (function (o, $, h) {
   } else {
     return new Function;
   };
-})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
+})(document.querySelector('#condiciones'), jQuery, hotusa()); 
 
 (function (o, $, h) {
   if(o){
