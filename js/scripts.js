@@ -44,9 +44,6 @@
   };
 })(document.querySelector('.tpl-header-key'), jQuery, hotusa());
 
-
-
-
 (function (o, $, h) {
   if(o){
      function nameFind(url) {
@@ -89,15 +86,6 @@
      cargarImg(fotos[_cont],true);
   }
  })(document.querySelector('.tpl-cabecera-key'), jQuery, hotusa());
-
-
-
-
-
-
-
-
-
  
 var openModalAviso = (function (o, $, h) {
   if (o) {
@@ -122,11 +110,8 @@ var openModalAviso = (function (o, $, h) {
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
-
 (function (o, $, h) {
   if(o){
-
-    
 
     var _form = {
       $nombrehot : $('.sta-form-key_nombrehot',o),
@@ -170,7 +155,6 @@ var openModalAviso = (function (o, $, h) {
 
     errores.$conterror.empty().parent().removeClass('sta-ok').removeClass('sta-ko');
       
-      
       for (var key in _form) {
         var i = _form[key],
         e = 0;
@@ -183,8 +167,6 @@ var openModalAviso = (function (o, $, h) {
         }
       };
 
-
-
       if(!h.mail(_form.$email.val().trim())){
         _form.$email.parent().addClass('sta-ko');
         mail = false;
@@ -193,9 +175,6 @@ var openModalAviso = (function (o, $, h) {
         _form.$email.parent().removeClass('sta-ko');
       };
 
-
-
-
       if(!h.mail(_form.$email.val().trim()) || !h.mail(_form.$repemail.val().trim()) || _form.$email.val().trim() != _form.$repemail.val().trim()){
         _form.$repemail.parent().addClass('sta-ko');
         mail2 =false;
@@ -203,7 +182,6 @@ var openModalAviso = (function (o, $, h) {
       }else{
         _form.$repemail.parent().removeClass('sta-ko');
       };
-
 
       if(!_form.$politicas.prop('checked')){
         _form.$politicas.parent().addClass('sta-ko');
@@ -227,20 +205,20 @@ var openModalAviso = (function (o, $, h) {
         if(!poli){
           errores.$conterror.append(errores.$erpolitic + '<br />');
         }
-      }
-      
+      }      
 
       return _boo;
     };
-    $('.sta-form-key_enviar').click(function(){
 
+    $('.sta-form-key_form',o).submit(function(e){
+      
+      e.preventDefault();
       if( validar() ){
         errores.$cont.removeClass('sta-ko')
         errores.$cont.addClass('sta-ok')
 
         console.log('enviar')
       }
-
     });
 
   }
@@ -272,12 +250,9 @@ var openModalAviso = (function (o, $, h) {
       var _boo = true,
       select = true,
       empty = true,
-      mail = true,
-      mail2 = true,
       poli = true;
       
     errores.$conterror.empty().parent().removeClass('sta-ok').removeClass('sta-ko');
-      
       
       for (var key in _form) {
         var i = _form[key];
@@ -310,11 +285,11 @@ var openModalAviso = (function (o, $, h) {
         poli = false;
         _boo = false;
       }else{
-        _form.$politica.siblings().removeClass('sta-ko')
+        _form.$politica.siblings().removeClass('sta-ko');
       };
       
       if(!empty || !poli){
-        errores.$cont.addClass('sta-ko')
+        errores.$cont.addClass('sta-ko');
         if(!empty){
           errores.$conterror.append(errores.$errellena + '<br />');
         }
@@ -325,15 +300,16 @@ var openModalAviso = (function (o, $, h) {
       }
       return _boo;
     };
-    $('.sta-contactForm-key_enviar').click(function(){
 
+    $('.sta-contactForm-key_form',o).submit(function(e){
+
+      e.preventDefault();
       if( validar() ){
-        errores.$cont.removeClass('sta-ko')
-        errores.$cont.addClass('sta-ok')
+        errores.$cont.removeClass('sta-ko');
+        errores.$cont.addClass('sta-ok');
 
         console.log('enviar')
       }
-
     });
 
   }
