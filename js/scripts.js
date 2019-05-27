@@ -120,7 +120,7 @@ var openModalAviso = (function (o, $, h) {
   } else {
     return new Function;
   };
-})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
+})(document.querySelectorAll('.tpl-modal-key'), jQuery, hotusa()); 
 
 
 

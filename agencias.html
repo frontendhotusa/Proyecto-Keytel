@@ -137,7 +137,7 @@
               </div>
             </div>
             <div class="sta-fiveboxes-key_contBtn">
-              <button>Registrar agencia</button>
+              <button onclick="openModalAviso()">Registrar agencia</button>
             </div>
           </div>
         </div>
@@ -875,7 +875,148 @@
 
   </main>
 
-  
+  <div class="tpl-modal-key">
+    <div class="sta-modal-key_max">
+      <button class="sta-modal-key_cerrar"></button>
+
+      <div class="sta-modal-key_content">
+        <div class="sta-modal-key_contenido">
+
+
+
+
+          <div class="tpl-form-key">
+            <div class="sta-form-key_container">
+              <div class="sta-form-key_title">
+                Registro del hotel
+              </div>
+              <div class="sta-form-key_content">
+
+                <form class="sta-form-key_form">
+                  <ul>
+                    <li>
+                      <div class="sta-form-key_form_title">Datos del hotel</div>
+
+                      <div class="sta-form-key_dual">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Nombre del Hotel</div>
+                          <input type="text" class="sta-form-key_nombrehot">
+                          <span class="sta-form-key_span">Ejemplo nombre hotel</span>
+                        </label>
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Dirección</div>
+                          <input type="text" class="sta-form-key_direccion">
+                        </label>
+                      </div>
+
+                      <div class="sta-form-key_dual">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Población</div>
+                          <input type="text" class="sta-form-key_poblacion">
+                        </label>
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Código Postal</div>
+                          <input type="text" class="sta-form-key_codigo">
+                        </label>
+                      </div>
+
+                      <div class="sta-form-key_dual">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Provincia</div>
+                          <input type="text" class="sta-form-key_provincia">
+                        </label>
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">País</div>
+                          <input type="text" class="sta-form-key_pais">
+                        </label>
+                      </div>
+
+                      <div class="sta-form-key_indi">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Teléfono</div>
+                          <input type="text" class="sta-form-key_telef">
+                        </label>
+                      </div>
+
+                    </li>
+
+                    <li>
+
+                      <div class="sta-form-key_form_title">Datos de contacto</div>
+
+                      <div class="sta-form-key_dual">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Nombre</div>
+                          <input type="text" class="sta-form-key_nombre">
+                          <span class="sta-form-key_span">Ejemplo nombre</span>
+                        </label>
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Apellidos</div>
+                          <input type="text" class="sta-form-key_apellidos">
+                        </label>
+                      </div>
+
+                      <div class="sta-form-key_indi">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Cargo</div>
+                          <input type="text" class="sta-form-key_cargo">
+                        </label>
+                      </div>
+
+                      <div class="sta-form-key_dual">
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Email de contacto</div>
+                          <input type="text" class="sta-form-key_email">
+                        </label>
+                        <label class="sta-form-key_label">
+                          <div class="sta-form-key_titinput">Repetir e-mail</div>
+                          <input type="text" class="sta-form-key_repemail">
+                        </label>
+                      </div>
+
+                    </li>
+
+                  
+                  </ul>
+
+
+                </form>
+
+
+                <div class="sta-form-key_table">
+                  <div class="sta-form-key_cell">
+                    <label class="sta-form-key_check">
+                      <input type="checkbox" class="sta-form-key_politicas">
+                      <span>Acepto la <a href="">Política de privacidad</a></span>
+                    </label>
+                  </div>
+                  <div class="sta-form-key_button">
+                    <button class="sta-form-key_enviar" type="button">Enviar</button>
+                  </div>
+                </div>
+                <div class="sta-form-key_error">
+                  <div class="sta-form-key_ok sta-ok">
+                    Enviamos correctamente
+                  </div>
+                  <div class="sta-form-key_ko sta-ko">
+                    <input type="hidden" value="Campos no rellenados" class="sta-form-key_error-campos">
+                    <input type="hidden" value="Mail incorrecto" class="sta-form-key_error-mail">
+                    <input type="hidden" value="Los email deben coincidir" class="sta-form-key_error-remail">
+                    <input type="hidden" value="Acepta las políticas" class="sta-form-key_error-politicas">
+                    <input type="hidden" value="Error en el registro" class="sta-form-key_error-registro">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <footer>
     
     <div class="tpl-footer-key">
