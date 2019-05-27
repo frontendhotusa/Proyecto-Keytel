@@ -110,8 +110,6 @@ var openModalAviso = (function (o, $, h) {
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
-<<<<<<< HEAD
-=======
 var openModalPoli = (function (o, $, h) {
   if (o) {
 
@@ -158,7 +156,6 @@ var openModalAviso = (function (o, $, h) {
   };
 })(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
->>>>>>> origin/master
 (function (o, $, h) {
   if(o){
 
