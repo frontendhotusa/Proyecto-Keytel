@@ -465,7 +465,7 @@ html{background: red}
 .tpl-form-key .sta-form-key_check span:before{content: "";position: absolute; top:1px; left: 0; width: 14px; height: 14px; background: #fff; border: 1px solid #00613f;}
 .tpl-form-key .sta-form-key_check input ~ span:after{content:"";font-size: 0; transition: .3s; color: #00613f; }
 .tpl-form-key .sta-form-key_check input:checked ~ span:after{content: "\e0a9"; font: 15px 'Icons';position: absolute; top:1px; left: 0; color: #00613f; }
-.tpl-form-key .sta-form-key_comentarios{border: 1px solid #00613f; width: calc(100% - 22px); min-height: 130px; padding: 10px;}
+.tpl-form-key .sta-form-key_comentarios{border: 1px solid #00613f; max-width: calc(100% - 22px);width: calc(100% - 22px); min-height: 130px; padding: 10px;}
 .tpl-form-key .sta-form-key_check span{margin-left: 3px;}
 .tpl-form-key .sta-form-key_texcheck{margin-bottom: 7px;}
 .tpl-form-key .sta-form-key_check{margin-bottom: 5px; }

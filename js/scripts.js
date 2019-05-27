@@ -120,8 +120,53 @@ var openModalAviso = (function (o, $, h) {
   } else {
     return new Function;
   };
-})(document.querySelectorAll('.tpl-modal-key'), jQuery, hotusa()); 
+})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
+var openModalPoli = (function (o, $, h) {
+  if (o) {
+
+    var $o = $(o),
+      $html = $('html');
+
+    $('.sta-modal-key_cerrar', o).click(close);
+
+    function open() {
+      $o.fadeIn(1e3);
+      $html.addClass('sta-noScroll');
+    }
+    function close() {
+      $o.fadeOut(1e3);
+      $html.removeClass('sta-noScroll');
+    }
+    $('.fn-openModalAviso').click(open);
+    return open;
+  } else {
+    return new Function;
+  };
+})(document.querySelector('#aviso'), jQuery, hotusa()); 
+
+var openModalAviso = (function (o, $, h) {
+  if (o) {
+
+    var $o = $(o),
+      $html = $('html');
+
+    $('.sta-modal-key_cerrar', o).click(close);
+
+    function open() {
+      $o.fadeIn(1e3);
+      $html.addClass('sta-noScroll');
+    }
+    function close() {
+      $o.fadeOut(1e3);
+      $html.removeClass('sta-noScroll');
+    }
+    $('.fn-openModalAviso').click(open);
+    return open;
+  } else {
+    return new Function;
+  };
+})(document.querySelector('.tpl-modal-key'), jQuery, hotusa()); 
 
 
 
