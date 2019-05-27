@@ -20,39 +20,49 @@
     <form class="sta-contactForm-key_form">
       <label class="sta-contactForm-key_label">
         <span>Nombre</span>
-        <input type="text">
+        <input type="text" class="sta-nombre">
       </label >
       <label class="sta-contactForm-key_label">
         <span>Empresa</span>
-        <input type="text">
+        <input type="text" class="sta-empresa">
       </label>
       <label class="sta-contactForm-key_label">
         <span>Cargo</span>
-        <input type="text">
+        <input type="text" class="sta-cargo">
       </label>
       <div class="sta-contactForm-key_contSelect">
         <span>Se contacta para información</span>
-        <select class="sta-contactForm-key_select">
-          <option value="Seleccione el departamento">Seleccione el departamento</option>
+        <select class="sta-contactForm-key_select sta-dpto">
+          <option value="">Seleccione el departamento</option>
           <option value="no">no</option>
           <option value="si">si</option>
         </select>
       </div>
       <label class="sta-contactForm-key_labelTextarea">
         <span>Asunto</span>
-        <textarea>
-
-        </textarea>
+        <textarea class="sta-asunto"></textarea>
       </label>
       <div class="sta-contactForm-key_table">
         <div class="sta-contactForm-key_cell sta-contactForm-key_left">
           <label>
-            <input class="sta-inputFixed" type="checkbox">
+            <input class="sta-inputFixed sta-politica" type="checkbox">
             <span> Acepto la <a href="#">política de privacidad</a></span>
           </label>
           <span>
             Todos los campos son obligatorios
           </span>
+          <div class="sta-contactForm-key_error">
+            <div class="sta-contactForm-key_ok sta-ok">
+            Enviamos correctamente
+            </div>
+            <div class="sta-contactForm-key_ko sta-ko">
+              <input type="hidden" value="Campos no rellenados" class="sta-contactForm-key_error-campos">
+              <input type="hidden" value="Mail incorrecto" class="sta-contactForm-key_error-mail">
+              <input type="hidden" value="Los email deben coincidir" class="sta-contactForm-key_error-remail">
+              <input type="hidden" value="Acepta las políticas" class="sta-contactForm-key_error-politicas">
+              <input type="hidden" value="Error en el registro" class="sta-contactForm-key_error-registro">
+            </div>
+          </div>
         </div>
         <div class="sta-contactForm-key_cell sta-contactForm-key_right">
           <button class="sta-contactForm-key_enviar" type="submit">
@@ -67,6 +77,6 @@
 
 
 
-<script src="../scripts.js"></script>
+<script src="../js/scripts.js"></script>
 </body>
 </html>
