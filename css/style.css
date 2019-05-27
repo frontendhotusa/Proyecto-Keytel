@@ -12,6 +12,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-g-cookies label{cursor:pointer;padding:0 10px;margin:0 10px;background:#fff;color:#000;}
 /* FIN COOKIES */
 
+.sta-noScroll{overflow: hidden}
+
 /* .tpl-header-key */
 .tpl-header-key{position:relative;z-index:9999;text-align:right}
 .tpl-header-key.sta-fixed .sta-header-key_abs{position:fixed;background:#353165}
