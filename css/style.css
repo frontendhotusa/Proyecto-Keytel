@@ -279,7 +279,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-selechoteles-key .sta-selechoteles-key_textcont{display: table-cell; vertical-align: bottom; padding: 0 25px 10px;}
 .tpl-selechoteles-key .sta-selechoteles-key_text{color: #fff; color: rgba(255, 255, 255, .5);margin-top: 15px;}
 @media (min-width: 601px){
-  .tpl-selechoteles-key{padding: 55px 25px 20px;}
+  .tpl-selechoteles-key{padding: 35px 25px 20px;}
   .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;padding: 30px 30px 20px}
   .tpl-selechoteles-key .sta-selechoteles-key_max{max-width: 1280px;margin: 0 auto;}
   .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 20px;}
@@ -329,7 +329,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 html{background: red}
 /* tpl-collage-key */
-.tpl-collage-key{background: #fff;padding: 40px 0 60px;}
+.tpl-collage-key{background: #fff;padding: 60px 0 60px;}
 .tpl-collage-key .tpl-title-key{padding: 0 20px;}
 .tpl-collage-key .sta-collage-key_galerycont{padding: 0 20px;}
 .tpl-collage-key .sta-collage-key_galerycont div div{background-position: center; background-size: cover; background-repeat: no-repeat;}
@@ -354,7 +354,7 @@ html{background: red}
 .tpl-collage-key .sta-collage-key_logo5 .st1{fill:#B38F23;}
 .tpl-collage-key .sta-collage-key_logo5 .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#B38F23;}
 @media (min-width: 721px){
-  .tpl-collage-key{background: #fff;padding: 40px 20px 60px;}
+  .tpl-collage-key{background: #fff;padding: 60px 20px 60px;}
   .tpl-collage-key .tpl-title-key{padding: 0;}
   .tpl-collage-key .sta-collage-key_max{max-width: 1220px; margin: 0 auto;}
   .tpl-collage-key .sta-collage-key_mitadd{display: inline-block; width: calc(50% - 20px); vertical-align: top; position: relative; margin-right: 20px;}
