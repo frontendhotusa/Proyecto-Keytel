@@ -14,6 +14,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 .sta-noScroll{overflow: hidden}
 
+.tpl-cabeceraNoHome-key ~ main{text-align: center;}
 /* .tpl-header-key */
 .tpl-header-key{position:relative;z-index:9999;text-align:right}
 .tpl-header-key.sta-fixed .sta-header-key_abs{position:fixed;background:#353165}
@@ -104,7 +105,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-cabecera-key .sta-cabecera-key_label span:after{content: '\e0a9';font: 1px/1px 'Icons';position: absolute;left: 0;top: 50%;width: 25px;text-align: center;color: transparent;transition: .3s;}
 .tpl-cabecera-key .sta-cabecera-key_recuerdame:checked + span:after{font-size: 15px;color: #00613f;}
 .tpl-cabecera-key .sta-cabecera-key_subCell span:before{content: '';position: absolute;left: 0;top: 0;width: 25px;height: 25px;background: #fff;box-shadow: 0 0 7px 0 rgba(0,0,0,.5);}
-.tpl-cabecera-key .sta-cabecera-key_recuerdame{position: absolute;left: 12px;top:24px;height: 1px;width: 1px;}
+.tpl-cabecera-key .sta-cabecera-key_recuerdame{position: absolute;left: 0;top:0;height: 1px;width: 1px;}
 .tpl-cabecera-key .sta-cabecera-key_btn{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 28px; }
 .tpl-cabecera-key .sta-cabecera-key_btn:hover,
 .tpl-cabecera-key .sta-cabecera-key_btn:focus{background: transparent;color: #e6c300;transition:.3s}
@@ -189,6 +190,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-footer-key ul li button{font-weight: 300;}
 .tpl-footer-key .sta-footer-key_images img,
 .tpl-footer-key .sta-footer-key_images svg{margin: 10px 20px; max-width: 270px; max-height: 70px; fill: #fff;}
+.tpl-footer-key a{color: #fff;}
 @media (min-width: 601px), print{
   .tpl-footer-key .sta-footer-key_images img,
   .tpl-footer-key .sta-footer-key_images svg{ max-width: 40%; max-height: 52px;display: inline-block; vertical-align: middle;}
@@ -346,7 +348,7 @@ html{background: red}
 .tpl-collage-key .sta-collage-key_logo4 svg,
 .tpl-collage-key .sta-collage-key_logo3 svg,
 .tpl-collage-key .sta-collage-key_logo2 svg,
-.tpl-collage-key .sta-collage-key_logo1 svg{position: absolute; bottom: 0;}
+.tpl-collage-key .sta-collage-key_logo1 svg{position: absolute; bottom: 0; right: 0;}
 .tpl-collage-key .sta-collage-key_logo1 .st0{fill: #000;}
 .tpl-collage-key .sta-collage-key_logo5 .st0{fill:#702C33;}
 .tpl-collage-key .sta-collage-key_logo5 .st1{fill:#B38F23;}
@@ -429,19 +431,22 @@ html{background: red}
 
 
 /* tpl-contactBox-key */
-.tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff;}
-.tpl-contactBox-key .sta-contactBox-key_title{font:italic 24px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 20px;margin-bottom: 20px;position: relative}
-.tpl-contactBox-key .sta-contactBox-key_title:after{content: ''; width: 100px;border-bottom: 1px solid #00613f; position: absolute;left: calc(50% - 50px);top: 100%}
+.tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 20px; background: #fff; }
+.tpl-contactBox-key .sta-contactBox-key_title{font:italic 24px 'Libre Baskerville', serif; color: #00613f; display: block;margin-bottom: 20px;position: relative}
 .tpl-contactBox-key .sta-contactBox-key_ubi li{margin: 0 auto;display: inline-block;padding: 20px 30px;vertical-align: top}
-.tpl-contactBox-key .sta-contactBox-key_city{text-transform: uppercase; font:italic 14px 'Libre Baskerville', serif}
+.tpl-contactBox-key .sta-contactBox-key_city{text-transform: uppercase; font:italic 14px 'Libre Baskerville', serif; color: #00613f;}
 .tpl-contactBox-key .sta-contactBox-key_contBtn{margin-top: 10px}
 .tpl-contactBox-key .sta-contactBox-key_contBtn button{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 10px;margin: 10px 5px}
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:focus,
 .tpl-contactBox-key .sta-contactBox-key_contBtn button:hover{background: transparent;transition:.3s}
 @media (min-width: 801px){
-  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 60px 20px 40px; background: #fff;}
-  .tpl-contactBox-key .sta-contactBox-key_title{font:italic 36px 'Libre Baskerville', serif; color: #00613f; display: block;padding-bottom: 50px}
+  .tpl-contactBox-key{text-align: center; color: #666; font: 16px 'Roboto'; padding: 60px 20px 40px; background: #fff; }
+  .tpl-contactBox-key .sta-contactBox-key_title{font:italic 24px 'Libre Baskerville', serif; color: #00613f; display: block;}
   .tpl-contactBox-key .sta-contactBox-key_city{font-size: 18px}
+}
+@media (min-width: 1200px){
+  .tpl-contactBox-key{display: inline-block; vertical-align: top; padding-left: 60px;}
+  .tpl-contactBox-key .sta-contactBox-key_ubi li{display: block;}
 }
 /* fin tpl-contactBox-key */
 
@@ -457,9 +462,9 @@ html{background: red}
 /* fin tpl-cabeceraNoHome-key */
 
 /* tpl-contactForm-key */
-.tpl-contactForm-key{padding: 0 20px}
+.tpl-contactForm-key{padding: 0 20px; display: inline-block;}
 .tpl-contactForm-key .sta-contactForm-key_max{margin: 0 auto}
-.tpl-contactForm-key .sta-contactForm-key_title{text-align: center; font: italic 30px 'Libre Baskerville', serif; color:#00613f; padding: 30px 0}
+.tpl-contactForm-key .sta-contactForm-key_title{text-align: center; font: italic 36px 'Libre Baskerville', serif; color:#00613f; padding: 30px 0}
 .tpl-contactForm-key .sta-contactForm-key_contSelect,
 .tpl-contactForm-key .sta-contactForm-key_labelTextarea,
 .tpl-contactForm-key .sta-contactForm-key_label{position: relative; display: block; margin-bottom: 30px;display: inline-block;width: 100%}
@@ -473,7 +478,7 @@ html{background: red}
 .tpl-contactForm-key .sta-contactForm-key_labelTextarea textarea{width: 100%;min-height:150px;border: 1px solid #000;display: inline-block;font: 300 18px 'Roboto', serif ; padding: 5px;color: #666;box-sizing: border-box}
 .tpl-contactForm-key .sta-contactForm-key_select{-webkit-appearance: none; appearance: none;}
 .tpl-contactForm-key .sta-contactForm-key_contSelect:before{position: absolute; top: 50%;right: 15px;content:'\e0b2';font: 15px/1px Icons}
-
+.tpl-contactForm-key .sta-contactForm-key_cell{text-align: left;}
 .tpl-contactForm-key .sta-contactForm-key_cell label{position: relative; display: block;}
 .tpl-contactForm-key .sta-contactForm-key_cell label input{position: absolute;left: 12px;top: 24px;height: 1px;width: 1px;}
 .tpl-contactForm-key .sta-contactForm-key_cell label span{display: block;padding: 5px 0 0 32px;position: relative;margin-bottom: 10px}
