@@ -104,35 +104,101 @@
 
   <main>
 
+
+    
+<div class="tpl-contactForm-key">
+    <div class="sta-contactForm-key_max">
+      <div class="sta-contactForm-key_title">Contáctanos</div>
+      <form class="sta-contactForm-key_form">
+        <label class="sta-contactForm-key_label">
+          <span>Nombre</span>
+          <input type="text" class="sta-nombre">
+        </label >
+        <label class="sta-contactForm-key_label">
+          <span>Empresa</span>
+          <input type="text" class="sta-empresa">
+        </label>
+        <label class="sta-contactForm-key_label">
+          <span>Cargo</span>
+          <input type="text" class="sta-cargo">
+        </label>
+        <div class="sta-contactForm-key_contSelect">
+          <span>Se contacta para información</span>
+          <select class="sta-contactForm-key_select sta-dpto">
+            <option value="">Seleccione el departamento</option>
+            <option value="no">no</option>
+            <option value="si">si</option>
+          </select>
+        </div>
+        <label class="sta-contactForm-key_labelTextarea">
+          <span>Asunto</span>
+          <textarea class="sta-asunto"></textarea>
+        </label>
+        <div class="sta-contactForm-key_table">
+          <div class="sta-contactForm-key_cell sta-contactForm-key_left">
+            <label>
+              <input class="sta-inputFixed sta-politica" type="checkbox">
+              <span> Acepto la <a onclick="openModalPoli()">política de privacidad</a></span>
+            </label>
+            <span>
+              Todos los campos son obligatorios
+            </span>
+            <div class="sta-contactForm-key_error">
+              <div class="sta-contactForm-key_ok sta-ok">
+              Enviamos correctamente
+              </div>
+              <div class="sta-contactForm-key_ko sta-ko">
+                <input type="hidden" value="Campos no rellenados" class="sta-contactForm-key_error-campos">
+                <input type="hidden" value="Mail incorrecto" class="sta-contactForm-key_error-mail">
+                <input type="hidden" value="Los email deben coincidir" class="sta-contactForm-key_error-remail">
+                <input type="hidden" value="Acepta las políticas" class="sta-contactForm-key_error-politicas">
+                <input type="hidden" value="Error en el registro" class="sta-contactForm-key_error-registro">
+              </div>
+            </div>
+          </div>
+          <div class="sta-contactForm-key_cell sta-contactForm-key_right">
+            <button class="sta-contactForm-key_enviar" type="submit">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+  </div>
+  
+
+
+
     <div class="tpl-contactBox-key">
       <div class="sta-contactBox-key_max">
-        <div class="sta-contactBox-key_title">“What really matters”</div>
+        <div class="sta-contactBox-key_title">Nuestras oficinas</div>
   
         <ul class="sta-contactBox-key_ubi">
             <li>
               <div class="sta-contactBox-key_city">Barcelona</div>
               <div class="sta-contactBox-key_dir">Mallorca 351</div>
-              <div class="sta-contactBox-key_tlf1">93 452 55 70</div>
-              <div class="sta-contactBox-key_tlf2"></div>
+              <div class="sta-contactBox-key_tlf1">08013 Barcelona</div>
+              <div class="sta-contactBox-key_tlf2">Tel. 93 452 55 70</div>
             </li>
             <li>
               <div class="sta-contactBox-key_city">Madrid</div>
-              <div class="sta-contactBox-key_dir">Mallorca 351</div>
-              <div class="sta-contactBox-key_tlf1">93 452 55 70</div>
-              <div class="sta-contactBox-key_tlf2"></div>
+              <div class="sta-contactBox-key_dir">Calle Xaudaró 24</div>
+              <div class="sta-contactBox-key_tlf1">28034 Madrid</div>
+              <div class="sta-contactBox-key_tlf2">Tel. 91 387 87 87</div>
             </li>
             <li>
               <div class="sta-contactBox-key_city">Londres</div>
-              <div class="sta-contactBox-key_dir">Mallorca 351</div>
-              <div class="sta-contactBox-key_tlf1">93 452 55 70</div>
-              <div class="sta-contactBox-key_tlf2">93 452 55 70</div>
+              <div class="sta-contactBox-key_dir">The Foundry,<br /> 156 Blackfriars Road</div>
+              <div class="sta-contactBox-key_tlf1">London SE1 8EN</div>
+              <div class="sta-contactBox-key_tlf2">Tel: 0044 (0)20 7953 3020<br />0044 (0)20 7953 3025</div>
             </li>
         </ul>
   
-        <div class="sta-contactBox-key_contBtn">
+      <!--  <div class="sta-contactBox-key_contBtn">
           <button>Nuevas Agencias</button>
           <button>Nuevos Hoteles</button>
-        </div>
+        </div>-->
         
       </div>
     </div>
