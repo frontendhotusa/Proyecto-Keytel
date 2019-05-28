@@ -105,7 +105,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-cabecera-key .sta-cabecera-key_label span:after{content: '\e0a9';font: 1px/1px 'Icons';position: absolute;left: 0;top: 50%;width: 25px;text-align: center;color: transparent;transition: .3s;}
 .tpl-cabecera-key .sta-cabecera-key_recuerdame:checked + span:after{font-size: 15px;color: #00613f;}
 .tpl-cabecera-key .sta-cabecera-key_subCell span:before{content: '';position: absolute;left: 0;top: 0;width: 25px;height: 25px;background: #fff;box-shadow: 0 0 7px 0 rgba(0,0,0,.5);}
-.tpl-cabecera-key .sta-cabecera-key_recuerdame{position: absolute;left: 12px;top:24px;height: 1px;width: 1px;}
+.tpl-cabecera-key .sta-cabecera-key_recuerdame{position: absolute;left: 0;top:0;height: 1px;width: 1px;}
 .tpl-cabecera-key .sta-cabecera-key_btn{background: #e6c300;color: #00613f;font: italic 18px 'Libre Baskerville', serif;box-shadow: 0 0 3px 0 rgba(0,0,0,.5);border: 2px solid #e6c300;cursor: pointer;transition: .3s;padding: 8px 28px; }
 .tpl-cabecera-key .sta-cabecera-key_btn:hover,
 .tpl-cabecera-key .sta-cabecera-key_btn:focus{background: transparent;color: #e6c300;transition:.3s}
@@ -190,6 +190,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-footer-key ul li button{font-weight: 300;}
 .tpl-footer-key .sta-footer-key_images img,
 .tpl-footer-key .sta-footer-key_images svg{margin: 10px 20px; max-width: 270px; max-height: 70px; fill: #fff;}
+.tpl-footer-key a{color: #fff;}
 @media (min-width: 601px), print{
   .tpl-footer-key .sta-footer-key_images img,
   .tpl-footer-key .sta-footer-key_images svg{ max-width: 40%; max-height: 52px;display: inline-block; vertical-align: middle;}
@@ -347,7 +348,7 @@ html{background: red}
 .tpl-collage-key .sta-collage-key_logo4 svg,
 .tpl-collage-key .sta-collage-key_logo3 svg,
 .tpl-collage-key .sta-collage-key_logo2 svg,
-.tpl-collage-key .sta-collage-key_logo1 svg{position: absolute; bottom: 0;}
+.tpl-collage-key .sta-collage-key_logo1 svg{position: absolute; bottom: 0; right: 0;}
 .tpl-collage-key .sta-collage-key_logo1 .st0{fill: #000;}
 .tpl-collage-key .sta-collage-key_logo5 .st0{fill:#702C33;}
 .tpl-collage-key .sta-collage-key_logo5 .st1{fill:#B38F23;}
