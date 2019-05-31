@@ -405,7 +405,7 @@ html{background: red}
   .tpl-marcas-key ul li:nth-of-type(3){border-top-color: #000;}
   .tpl-marcas-key .sta-marcas-key_box{max-width: 580px;}
 }
-@media (min-width: 1280px){
+@media (min-width: 1300px){
   .tpl-marcas-key .sta-marcas-key_box{display: inline-block; text-align: left; vertical-align: top; margin: 35px auto 0;}
   .tpl-marcas-key .sta-marcas-key_box:first-of-type{margin-right: 50px;}
   .tpl-marcas-key ul{text-align: center;}
