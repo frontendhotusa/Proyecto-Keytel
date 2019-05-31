@@ -44,6 +44,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-header-key .sta-header-key_list li{color:#fff;font:bold 16px 'Roboto',sans-serif;position:relative}
 .tpl-header-key .sta-header-key_list li.sta-actual .sta-header-key_border:before{left:0;right:0}
 .tpl-header-key .sta-header-key_list li button{color:#fff;display:block;width:100%;padding:13px 10px;}
+.tpl-header-key .sta-header-key_list li a{color:#fff;display:block;width:100%;padding:13px 10px; text-decoration: none;font-weight:300; box-sizing: border-box;}
 .tpl-header-key .sta-header-key_list li ul{display:none;}
 .tpl-header-key .sta-header-key_list li.sta-multiple ul{display:block;top:100%;left:0;border:solid rgba(255,255,255,.3);border-width:1px 0;max-width:300px;margin:0 auto;}
 .tpl-header-key .sta-header-key_list li.sta-multiple ul li{font-weight:normal;font-size:16px;}
@@ -56,6 +57,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-header-key.sta-complete .sta-header-key_cont{visibility:visible;opacity:1;position:static;background:0 0;padding:0;overflow:visible}
 .tpl-header-key.sta-complete .sta-header-key_list{text-align:right}
 .tpl-header-key.sta-complete .sta-header-key_list li{display:inline-block;vertical-align:top;}
+.tpl-header-key.sta-complete .sta-header-key_list li a,
 .tpl-header-key.sta-complete .sta-header-key_list li button{padding:10px 15px 10px 20px;}
 .tpl-header-key.sta-complete .sta-header-key_list li.sta-multiple:hover{background:#9e9e9e;transition:.3s;-webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.38));filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.38))}
 .tpl-header-key.sta-complete .sta-header-key_list li.sta-multiple:hover ul{opacity:1;visibility:visible;transition:.3s;}
