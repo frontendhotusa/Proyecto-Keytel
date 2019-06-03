@@ -95,6 +95,17 @@ var openModalAviso = (function (o, $, h) {
 
     $('.sta-modal-key_cerrar', o).click(close);
 
+
+
+    $($o).on("click",function(e) {
+                    
+      var container = $(".sta-modal-key_content");
+         if (!container.is(e.target) && container.has(e.target).length === 0) { 
+            close();
+         }
+  });
+
+
     function open() {
       $o.fadeIn(1e3);
       $html.addClass('sta-noScroll');
@@ -118,6 +129,17 @@ var openModalPoli = (function (o, $, h) {
 
     $('.sta-modal-key_cerrar', o).click(close);
 
+
+    $($o).on("click",function(e) {
+                    
+      var container = $(".sta-modal-key_content");
+         if (!container.is(e.target) && container.has(e.target).length === 0) { 
+            close();
+         }
+    });
+
+
+
     function open() {
       $o.fadeIn(1e3);
       $html.addClass('sta-noScroll');
@@ -140,6 +162,17 @@ var openModalCondi = (function (o, $, h) {
       $html = $('html');
 
     $('.sta-modal-key_cerrar', o).click(close);
+
+
+    $($o).on("click",function(e) {
+                    
+      var container = $(".sta-modal-key_content");
+         if (!container.is(e.target) && container.has(e.target).length === 0) { 
+            close();
+         }
+    });
+
+
 
     function open() {
       $o.fadeIn(1e3);
