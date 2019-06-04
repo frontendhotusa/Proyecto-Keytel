@@ -56,7 +56,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-header-key .sta-header-key_list .sta-header-key_idiomas label{border:solid rgba(255,255,255,.3);border-width:1px 0;display:block;padding:13px 10px}
 .tpl-header-key .sta-header-key_list .sta-header-key_idiomas label span:after{content:'\e0f8';margin-left:5px;font:11px Icons;color:#693}
 .tpl-header-key .sta-header-key_list .sta-header-key_idiomas ul{max-height:0;overflow:hidden;transition:1s;display:block;}
-.tpl-header-key.sta-complete .sta-header-key_max{padding:30px 20px 10px 30px}
+.tpl-header-key.sta-complete .sta-header-key_max{padding:30px 20px 10px 30px; max-width: 1280px; margin: 0 auto;}
 .tpl-header-key.sta-complete.sta-fixed .sta-header-key_max{padding-top:20px}
 .tpl-header-key.sta-complete .sta-header-key_cont{visibility:visible;opacity:1;position:static;background:0 0;padding:0;overflow:visible}
 .tpl-header-key.sta-complete .sta-header-key_list{text-align:right}
