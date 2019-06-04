@@ -605,11 +605,11 @@ html{background: red}
 .tpl-twoboxes-key .sta-twoboxes-key_title{font-size: 32px}
 .tpl-twoboxes-key .sta-twoboxes-key_box{ padding: 200px 0 0 0; background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 25px;}
 .tpl-twoboxes-key .sta-twoboxes-key_boxint{background: #fff; max-width: 260px; padding: 30px 35px; margin: 0 0 0 auto;}
-.tpl-twoboxes-key .sta-twoboxes-key_boxint a{display: block; margin: 30px auto 0; width: 160px; padding: 14px 0; border: 2px solid #e6c300; background: #e6c300; box-shadow: 0 0 8px -2px #000; color: #00613F; text-decoration: none; transition: .3s;}
+.tpl-twoboxes-key .sta-twoboxes-key_boxint a{display: block; margin: 35px auto 0; width: 160px; padding: 14px 0; border: 2px solid #e6c300; background: #e6c300; box-shadow: 0 0 8px -2px #000; color: #00613F; text-decoration: none; transition: .3s;}
 .tpl-twoboxes-key .sta-twoboxes-key_boxint a:hover{background: transparent;}
 @media (min-width: 651px){
   .tpl-twoboxes-key .sta-twoboxes-key_boxint{max-width: 250px; padding: 30px 50px;}
-  .tpl-twoboxes-key .sta-twoboxes-key_box{display: inline-block; vertical-align: top; padding: 250px 0 0 270px;}
+  .tpl-twoboxes-key .sta-twoboxes-key_box{display: inline-block; vertical-align: top; padding: 250px 0 0 240px;}
 }
 @media (min-width: 1311px){
   .tpl-twoboxes-key .sta-twoboxes-key_box:first-of-type{margin-right: 20px;}
