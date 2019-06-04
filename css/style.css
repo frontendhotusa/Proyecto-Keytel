@@ -100,7 +100,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 
 /* tpl-cabecera-key */
 .tpl-cabecera-key .sta-cabecera-key_imgActual{background-position: center;background-repeat: no-repeat;background-size: cover;position: absolute;left: 0;top: 0; bottom: 0;right:0;}
-.tpl-cabecera-key .sta-cabecera-key_max{margin: 0 auto;}
+.tpl-cabecera-key .sta-cabecera-key_relative{max-width: 1280px; position: relative; margin: 0 auto;}
+.tpl-cabecera-key .sta-cabecera-key_max{margin: 0 auto; overflow: visible;}
 .tpl-cabecera-key .sta-cabecera-key_table{display: table;width: 100%;position: relative;height: 340px;}
 .tpl-cabecera-key .sta-cabecera-key_cell{display: table-cell;padding:80px 20px 30px; vertical-align:middle;position: relative;z-index: 1;}
 .tpl-cabecera-key .sta-cabecera-key_txt{font: italic 24px 'Libre Baskerville', serif; color: #fff;text-shadow: 1px 1px 4px #000;}
