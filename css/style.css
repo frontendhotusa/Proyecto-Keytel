@@ -134,7 +134,7 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
   .tpl-cabecera-key .sta-cabecera-key_txt{font-size: 48px;}
   .tpl-cabecera-key .sta-cabecera-key_input input{font-size: 18px;padding:20px 0 0 18px;height: 60px}
   .tpl-cabecera-key .sta-cabecera-key_input span{font-size: 14px; top: 9px; left: 20px}
-  .tpl-cabecera-key .sta-cabecera-key_contForm{z-index: 2;position: absolute;top: 220px;right:30px;width: 40%; max-width: 500px;border-top:0;border-left: 4px solid #e6c300; }
+  .tpl-cabecera-key .sta-cabecera-key_contForm{z-index: 2;position: absolute;top: 220px;right:0;width: 40%; max-width: 500px;border-top:0;border-left: 4px solid #e6c300; }
 }
 
 /* FIN tpl-cabecera-key */
