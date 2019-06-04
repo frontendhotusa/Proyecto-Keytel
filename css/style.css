@@ -614,7 +614,5 @@ html{background: red}
 @media (min-width: 1311px){
   .tpl-twoboxes-key .sta-twoboxes-key_box:first-of-type{margin-right: 20px;}
   .tpl-twoboxes-key .sta-twoboxes-key_max{max-width: 1280px; margin: 0 auto;}
-
 }
-
 /* fin tpl-twoboxes-key */
