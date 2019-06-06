@@ -298,8 +298,8 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 .tpl-selechoteles-key .sta-selechoteles-key_textcont{display: table-cell; vertical-align: bottom; padding: 0 25px 10px;}
 .tpl-selechoteles-key .sta-selechoteles-key_text{color: #fff; color: rgba(255, 255, 255, .5);margin-top: 15px;}
 @media (min-width: 601px){
-  .tpl-selechoteles-key{padding: 35px 25px 20px;}
-  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;padding: 30px 30px 60px}
+  .tpl-selechoteles-key{padding: 35px 25px 60px;}
+  .tpl-selechoteles-key .sta-selechoteles-key_box{display: inline-block; vertical-align: top; margin: 10px;padding: 30px 30px 20px}
   .tpl-selechoteles-key .sta-selechoteles-key_max{max-width: 1280px;margin: 0 auto;}
   .tpl-selechoteles-key .sta-selechoteles-key_boxcont{margin-top: 20px;}
 }
