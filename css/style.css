@@ -158,15 +158,17 @@ body{cursor: default; font: 14px 'Roboto', sans-serif; margin: 0; width: 100%;ba
 /* fin tpl-boxes3-key */
 
 /* tpl-ventajas-key */
-.tpl-ventajas-key{background: #fff}
+.tpl-ventajas-key{background: #fff; position: relative;}
 .tpl-ventajas-key .sta-ventajas-key_max{text-align: center;margin: 0 auto}
-.tpl-ventajas-key .sta-ventajas-key_superior{color: #666; padding: 30px; max-width: 700px;margin: 0 auto;}
+.tpl-ventajas-key .sta-ventajas-key_superior{color: #666; padding: 30px; max-width: 700px;margin: 0 auto; position: relative; z-index: 1;}
 .tpl-ventajas-key .sta-ventajas-key_title{font: italic 24px 'Libre Baskerville', serif;margin-bottom: 20px; color: #00613f;}
 .tpl-ventajas-key .sta-ventajas-key_subtitle{font: 300 14px 'Roboto', sans-serif}
 .tpl-ventajas-key .sta-ventajas-key_box{width: 290px; height: 380px; display: inline-block;position: relative;margin: 0 7.5px 20px}
 .tpl-ventajas-key .sta-ventajas-key_imgBox{position: absolute; bottom: 100%;left: 0;background-size: cover;background-position: center; background-repeat: no-repeat}
 .tpl-ventajas-key .sta-ventajas-key_titleBox{padding:20px;font: italic 400 20px/25px 'Libre Baskerville', serif;background: rgba(0,97,63,70%); text-align: center;color: #fff;position:absolute; bottom: 0;left: 0;right: 0}
 @media (min-width:801px){
+  .tpl-ventajas-key:before{content: "";position: absolute; width: 400px; height: 400px; right: 0; top: 0; background-image: url('../images/fondomod.jpg'); background-position: center; background-repeat: no-repeat; background-size: contain;}
+  .tpl-ventajas-key .sta-ventajas-key_max:before{content: "";position: absolute; width: 400px; height: 400px;bottom: -78px; left: 0; background-image: url('../images/fondomod2.jpg'); background-position: center; background-repeat: no-repeat; background-size: contain;}
   .tpl-ventajas-key .sta-ventajas-key_max{max-width: 1220px}
   .tpl-ventajas-key .sta-ventajas-key_superior{ padding: 55px 30px 10px}
   .tpl-ventajas-key .sta-ventajas-key_title{font-size:36px}
@@ -603,7 +605,7 @@ html{background: red}
 
 /* tpl-twoboxes-key */
 .tpl-twoboxes-key{font: italic 24px 'Libre Baskerville', serif; color: #00613f; padding: 20px; text-align: center}
-.tpl-twoboxes-key .sta-twoboxes-key_title{font-size: 32px}
+.tpl-twoboxes-key .sta-twoboxes-key_title{font-size: 32px; position: relative; z-index: 1;}
 .tpl-twoboxes-key .sta-twoboxes-key_box{ padding: 200px 0 0 0; background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 25px;}
 .tpl-twoboxes-key .sta-twoboxes-key_boxint{background: #fff; max-width: 260px; padding: 30px 35px; margin: 0 0 0 auto;}
 .tpl-twoboxes-key .sta-twoboxes-key_boxint a{display: block; margin: 35px auto 0; width: 160px; padding: 14px 0; border: 2px solid #e6c300; background: #e6c300; box-shadow: 0 0 8px -2px #000; color: #00613F; text-decoration: none; transition: .3s;}
